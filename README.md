@@ -1,4 +1,4 @@
-# SISE Compat — project02 / NeoForge 26.1.2
+# SISE Compat — NeoForge 26.1.2
 
 整合包兼容修复模组。物品仍属于原模组；不注册替代导管、装备或机器，不更改 SISE Ores 的材料归属。客户端与服务端均安装本模组。
 

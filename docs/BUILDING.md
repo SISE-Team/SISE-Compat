@@ -8,12 +8,12 @@
 
 - Windows、Python 3.10 或更新版本、JDK 25。
 - 仓库根目录下已另行准备好本地 `tool/` 脚本。
-- project02 实例中的 `mods/` 和已解析的 `libraries/`，包括 NeoForge 26.1.2.114、SISE Ores、Modern Industrialization 及整合包配套模组。
+- 目标整合包实例中的 `mods/` 和已解析的 `libraries/`，包括 NeoForge 26.1.2.114、SISE Ores、Modern Industrialization 及整合包配套模组。
 
 从仓库根目录执行：
 
 ```powershell
-$env:SISE_INSTANCE_DIR = 'D:\Minecraft\project02'
+$env:SISE_INSTANCE_DIR = 'D:\Minecraft\SISE'
 $env:SISE_JDK_DIR = 'C:\Java\jdk-25'
 python tool/build.py
 python tool/test.py
