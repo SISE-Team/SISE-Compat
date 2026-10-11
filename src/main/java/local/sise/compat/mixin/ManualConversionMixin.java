@@ -14,6 +14,7 @@ public abstract class ManualConversionMixin {
     private static void siseCompat$manual(RecipeHolder<StonecutterRecipe> holder,MachineRecipeType type,
             RegistryAccess registries,CallbackInfoReturnable<RecipeHolder<MachineRecipe>> callback) {
         String id = holder.id().identifier().toString();
-        if (id.startsWith("sise_compat:manual/") || id.equals("justdirethings:charcoal_9x9")) callback.setReturnValue(null);
+        if (id.startsWith("sise_compat:manual/") || id.equals("justdirethings:charcoal_9x9")
+                || local.sise.compat.materials.RecipeSafety.manualOnly(id)) callback.setReturnValue(null);
     }
 }

@@ -12,6 +12,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.resources.*;
 import net.minecraft.core.registries.Registries;
 import local.sise.ores.*;
+import local.sise.compat.materials.RecipeSafety;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.ModifyRecipeJsonsEvent;

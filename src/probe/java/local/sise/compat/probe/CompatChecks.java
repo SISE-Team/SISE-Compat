@@ -39,7 +39,7 @@ final class CompatChecks {
     static List<String> verify(MinecraftServer server) {
         checks.clear();
         check(((Map<?,?>)RecipePatches.lastReport.get("skipped")).isEmpty(),"all compatibility source guards matched");
-        check(((Map<?,?>)RecipePatches.lastReport.get("applied")).size()==76,"76 reviewed compatibility patches applied");
+        check(((Map<?,?>)RecipePatches.lastReport.get("applied")).size()==93,"93 reviewed compatibility patches applied");
         check(server.getRecipeManager().byKey(ResourceKey.create(Registries.RECIPE,Identifier.parse("avaritia:eio_creative_power"))).isEmpty(),"missing EnderIO creative power disabled by registry conditions");
         var ops = server.registryAccess().createSerializationContext(JsonOps.INSTANCE);
         int restored = 0;
@@ -48,7 +48,7 @@ final class CompatChecks {
             var after = entry.getValue().getAsJsonObject().getAsJsonObject("after");
             var r = recipe(server,id);
             check(r!=null,"patched recipe loaded "+id);
-            if (id.startsWith("enderio_evolution:") || id.startsWith("neoecoae:") || id.startsWith("avaritia:")) restored++;
+            if ((id.startsWith("enderio_evolution:") || id.startsWith("neoecoae:") || id.startsWith("avaritia:")) && !entry.getValue().getAsJsonObject().has("category")) restored++;
             if (after.has("pattern")) {
                 var pattern = after.getAsJsonArray("pattern"); var stacks = new ArrayList<ItemStack>();
                 int width = pattern.get(0).getAsString().length();

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:registered",
+      "registry": "enderio:conduit_type",
+      "value": "enderio:chemical"
+    }
+  ],
+  "type": "enderio:chemical",
+  "description": {
+    "translate": "item.enderio_evolution.conduit.stellar_chemical_conduit"
+  },
+  "texture": "enderio_evolution:block/conduit/stellar_chemical_conduit",
+  "transfer_rate": 2147483647
+}

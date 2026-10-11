@@ -1,0 +1,8 @@
+{
+  "type": "enderio:chemical",
+  "texture": "enderio:block/conduit/chemical",
+  "description": {
+    "translate": "item.enderio.conduit.chemical"
+  },
+  "transfer_rate": 750
+}

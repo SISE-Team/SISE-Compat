@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BBB",
+    "III",
+    "BBB"
+  ],
+  "key": {
+    "B": "enderio:conduit_binder",
+    "I": "mekanism:advanced_pressurized_tube"
+  },
+  "result": {
+    "id": "enderio:conduit",
+    "count": 3,
+    "components": {
+      "enderio:conduit": "enderio:pressurized_chemical"
+    }
+  }
+}

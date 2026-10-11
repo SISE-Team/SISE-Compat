@@ -3661,6 +3661,748 @@
         }
       },
       "reason": "protect existing alternate direction conversion from consuming machine data components"
+    },
+    "enderio_evolution:conduit/melodic_chemical_conduit": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio:ender_chemical"
+          },
+          "I": "enderio_evolution:melodic_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:melodic_chemical_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          },
+          {
+            "type": "neoforge:registered",
+            "registry": "enderio:conduit_type",
+            "value": "enderio:chemical"
+          }
+        ],
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio:ender_chemical",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:melodic_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:melodic_chemical_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "migrate chemical conduit ingredients and require the restored conduit type",
+      "category": "chemical"
+    },
+    "enderio_evolution:conduit/stellar_chemical_conduit": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:melodic_chemical_conduit"
+          },
+          "I": "enderio_evolution:stellar_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:stellar_chemical_conduit"
+          },
+          "count": 1,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          },
+          {
+            "type": "neoforge:registered",
+            "registry": "enderio:conduit_type",
+            "value": "enderio:chemical"
+          }
+        ],
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:melodic_chemical_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:stellar_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:stellar_chemical_conduit"
+          },
+          "count": 1,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "migrate chemical conduit ingredients and require the restored conduit type",
+      "category": "chemical"
+    },
+    "neoecoae:crushing/aluminum_alloy_dust": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "tag": "c:ingots/aluminum_alloy"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:aluminum_alloy_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:ingots/aluminum_alloy"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:aluminum_alloy_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "mineral_format"
+    },
+    "neoecoae:crushing/aluminum_dust": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "tag": "c:ingots/aluminum"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:aluminum_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:ingots/aluminum"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:aluminum_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "legacy_material_format"
+    },
+    "neoecoae:crushing/black_tungsten_alloy_dust": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "tag": "c:ingots/black_tungsten_alloy"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:black_tungsten_alloy_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:ingots/black_tungsten_alloy"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:black_tungsten_alloy_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "mineral_format"
+    },
+    "neoecoae:crushing/energized_crystal_dust": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "tag": "c:gems/energized_crystal"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:energized_crystal_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:gems/energized_crystal"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:energized_crystal_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "mineral_format"
+    },
+    "neoecoae:crushing/energized_flux_crystal_dust": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "tag": "c:gems/energized_fluix_crystal"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:energized_fluix_crystal_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:gems/energized_fluix_crystal"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:energized_fluix_crystal_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "mineral_format"
+    },
+    "neoecoae:crushing/tungsten_dust": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "tag": "c:ingots/tungsten"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:tungsten_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:crushing",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:ingots/tungsten"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:tungsten_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "legacy_material_format"
+    },
+    "neoecoae:crystal_fixer/chipped_budding_energized_crystal": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:crystal_fixer",
+        "chance": 8000,
+        "fuel": {
+          "ingredient": {
+            "tag": "c:gems/energized_crystal"
+          }
+        },
+        "input": {
+          "count": 1,
+          "id": "neoecoae:damaged_budding_energized_crystal"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:chipped_budding_energized_crystal"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:crystal_fixer",
+        "chance": 8000,
+        "fuel": {
+          "ingredient": "#c:gems/energized_crystal"
+        },
+        "input": {
+          "count": 1,
+          "id": "neoecoae:damaged_budding_energized_crystal"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:chipped_budding_energized_crystal"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "mineral_format"
+    },
+    "neoecoae:crystal_fixer/damaged_budding_energized_crystal": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:crystal_fixer",
+        "chance": 8000,
+        "fuel": {
+          "ingredient": {
+            "tag": "c:gems/energized_crystal"
+          }
+        },
+        "input": {
+          "count": 1,
+          "id": "neoecoae:energized_crystal_block"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:damaged_budding_energized_crystal"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:crystal_fixer",
+        "chance": 8000,
+        "fuel": {
+          "ingredient": "#c:gems/energized_crystal"
+        },
+        "input": {
+          "count": 1,
+          "id": "neoecoae:energized_crystal_block"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:damaged_budding_energized_crystal"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "mineral_format"
+    },
+    "neoecoae:crystal_fixer/flawed_budding_energized_crystal": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:crystal_fixer",
+        "chance": 500,
+        "fuel": {
+          "ingredient": {
+            "tag": "c:gems/energized_crystal"
+          }
+        },
+        "input": {
+          "count": 1,
+          "id": "neoecoae:chipped_budding_energized_crystal"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:flawed_budding_energized_crystal"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:crystal_fixer",
+        "chance": 500,
+        "fuel": {
+          "ingredient": "#c:gems/energized_crystal"
+        },
+        "input": {
+          "count": 1,
+          "id": "neoecoae:chipped_budding_energized_crystal"
+        },
+        "output": {
+          "count": 1,
+          "id": "neoecoae:flawed_budding_energized_crystal"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "mineral_format"
+    },
+    "neoecoae:enriching/aluminum_dust_from_ore": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 1,
+          "tag": "c:ores/aluminum"
+        },
+        "output": {
+          "count": 2,
+          "id": "neoecoae:aluminum_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:ores/aluminum"
+        },
+        "output": {
+          "count": 2,
+          "id": "neoecoae:aluminum_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "legacy_material_format"
+    },
+    "neoecoae:enriching/aluminum_dust_from_raw": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 3,
+          "tag": "c:raw_materials/aluminum"
+        },
+        "output": {
+          "count": 4,
+          "id": "neoecoae:aluminum_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 3,
+          "ingredient": "#c:raw_materials/aluminum"
+        },
+        "output": {
+          "count": 4,
+          "id": "neoecoae:aluminum_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "legacy_material_format"
+    },
+    "neoecoae:enriching/aluminum_dust_from_raw_block": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 1,
+          "tag": "c:storage_blocks/raw_aluminum"
+        },
+        "output": {
+          "count": 12,
+          "id": "neoecoae:aluminum_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:storage_blocks/raw_aluminum"
+        },
+        "output": {
+          "count": 12,
+          "id": "neoecoae:aluminum_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "legacy_material_format"
+    },
+    "neoecoae:enriching/tungsten_dust_from_ore": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 1,
+          "tag": "c:ores/tungsten"
+        },
+        "output": {
+          "count": 2,
+          "id": "neoecoae:tungsten_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:ores/tungsten"
+        },
+        "output": {
+          "count": 2,
+          "id": "neoecoae:tungsten_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "legacy_material_format"
+    },
+    "neoecoae:enriching/tungsten_dust_from_raw": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 3,
+          "tag": "c:raw_materials/tungsten"
+        },
+        "output": {
+          "count": 4,
+          "id": "neoecoae:tungsten_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 3,
+          "ingredient": "#c:raw_materials/tungsten"
+        },
+        "output": {
+          "count": 4,
+          "id": "neoecoae:tungsten_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "legacy_material_format"
+    },
+    "neoecoae:enriching/tungsten_dust_from_raw_block": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 1,
+          "tag": "c:storage_blocks/raw_tungsten"
+        },
+        "output": {
+          "count": 12,
+          "id": "neoecoae:tungsten_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 1,
+          "ingredient": "#c:storage_blocks/raw_tungsten"
+        },
+        "output": {
+          "count": 12,
+          "id": "neoecoae:tungsten_dust"
+        }
+      },
+      "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
+      "category": "legacy_material_format"
     }
   },
   "additions": {

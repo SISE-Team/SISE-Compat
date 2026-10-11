@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "CCC",
+    "CUC",
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "neoforge:ingredient_type": "enderio:conduit",
+      "conduit_type": "enderio:pressurized_chemical"
+    },
+    "U": "mekanism:alloy_reinforced"
+  },
+  "result": {
+    "id": "enderio:conduit",
+    "count": 8,
+    "components": {
+      "enderio:conduit": "enderio:ender_chemical"
+    }
+  }
+}

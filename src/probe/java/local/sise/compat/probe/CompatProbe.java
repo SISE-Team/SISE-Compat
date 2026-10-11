@@ -5,6 +5,9 @@ import com.mojang.serialization.JsonOps;
 import java.nio.file.*;
 import java.util.*;
 import local.sise.ores.*;
+import local.sise.compat.materials.*;
+import local.sise.compat.materials.RecipeSafety;
+import local.sise.compat.RecipePatches;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Screenshot;
 import net.minecraft.client.gui.screens.TitleScreen;
@@ -34,10 +37,14 @@ public final class CompatProbe {
     private static volatile int stage;
     private static Path directory;
     private static final List<String> checks = new ArrayList<>();
-    public CompatProbe() {
+    public CompatProbe(net.neoforged.bus.api.IEventBus bus) {
         if (Boolean.getBoolean("sise.compat.verify")) {
             NeoForge.EVENT_BUS.addListener(CompatProbe::tick);
             RecipeAudit.register();
+            bus.addListener((net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent event) -> {
+                try { ListenerStress.run(true); }
+                catch (Exception error) { throw new RuntimeException(error); }
+            });
         }
     }
     private static void check(boolean value, String message) {
@@ -51,6 +58,8 @@ public final class CompatProbe {
         return Recipe.CODEC.encodeStart(server.registryAccess().createSerializationContext(JsonOps.INSTANCE), recipe).getOrThrow().getAsJsonObject();
     }
     private static void verify(MinecraftServer server) {
+        try { checks.addAll(RuntimeFixChecks.verify(server)); }
+        catch (Exception error) { throw new RuntimeException(error); }
         checks.addAll(CompatChecks.verify(server));
         var raritySource = new java.util.concurrent.ConcurrentHashMap<Identifier, Integer>();
         raritySource.put(SiseOres.id("tin_ingot"), 1);
@@ -109,16 +118,16 @@ public final class CompatProbe {
         }
         check(loaded >= 500, "at least 500 rewritten recipes actually deserialized");
         check(loaded == changed.size(), "every runtime-unified recipe actually loaded");
-        check(((Number)RecipeUnifier.lastReport.getOrDefault("legacy_format_repairs", 0)).intValue() == 8, "eight legacy material recipes repaired");
-        check(((Map<?, ?>)RecipeUnifier.lastReport.get("mineral_format_repairs")).size() == 7, "seven additional mineral processing repairs");
-        for (var id : MineralRepairs.CRUSHING) {
+        check(RecipePatches.appliedInCategory("legacy_material_format") == 8, "eight legacy material recipes repaired by SISE Compat");
+        check(RecipePatches.appliedInCategory("mineral_format") == 7, "seven additional mineral processing repairs owned by SISE Compat");
+        for (var id : MineralRecipes.CRUSHING) {
             var r = (mekanism.api.recipes.ItemStackToItemStackRecipe)recipe(server, id);
             var in = r.getInput().ingredient();
             var raw = in.ingredient().items().findFirst().orElseThrow().value();
             var sample = new SingleRecipeInput(new ItemStack(raw, in.count()));
             check(r.matches(sample, server.overworld()) && !r.assemble(sample).isEmpty(), "restored mineral crushing executes " + id);
         }
-        for (var id : MineralRepairs.CRYSTAL_FIXING) {
+        for (var id : MineralRecipes.CRYSTAL_FIXING) {
             var encoded = encode(server, recipe(server, id));
             check(encoded.getAsJsonObject("fuel").get("ingredient").getAsString().equals("#c:gems/energized_crystal"), "restored crystal fuel tag " + id);
             check(encoded.get("chance").getAsInt() == (id.contains("flawed_") ? 500 : 8000), "crystal repair chance unchanged " + id);

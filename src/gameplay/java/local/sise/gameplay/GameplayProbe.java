@@ -140,7 +140,7 @@ public final class GameplayProbe {
     }
     static void startMachines(MinecraftServer s) {
         require(machines.isEmpty(),"Machine cases already started");
-        var all=new ArrayList<String>(local.sise.ores.MineralRepairs.CRUSHING);Collections.sort(all);
+        var all=new ArrayList<String>(local.sise.compat.materials.MineralRecipes.CRUSHING);Collections.sort(all);
         all.add("mekanism:processing/iron/dust/from_ingot");
         for(String id:all) {
             var r=(mekanism.api.recipes.ItemStackToItemStackRecipe)recipe(s,id);var in=r.getInput().ingredient();

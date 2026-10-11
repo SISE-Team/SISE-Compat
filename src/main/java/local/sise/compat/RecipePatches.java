@@ -25,6 +25,13 @@ public final class RecipePatches {
         if (entry.get("after").equals(value)) return "already_applied";
         return entry.get("before").equals(value) ? "apply" : "source_changed";
     }
+    public static long appliedInCategory(String category) {
+        var applied = (Map<?, ?>) lastReport.getOrDefault("applied", Map.of());
+        return applied.keySet().stream().filter(id -> {
+            var rule = RULES.getAsJsonObject("patches").getAsJsonObject(id.toString());
+            return rule.has("category") && rule.get("category").getAsString().equals(category);
+        }).count();
+    }
     public static void apply(ModifyRecipeJsonsEvent event) {
         var applied = new TreeMap<String,String>();
         var skipped = new TreeMap<String,String>();
