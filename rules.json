@@ -1,0 +1,3718 @@
+{
+  "patches": {
+    "enderio_evolution:conduit/stellar_energy_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:melodic_energy_conduit"
+          },
+          "I": "enderio_evolution:stellar_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:stellar_energy_conduit"
+          },
+          "count": 1,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:melodic_energy_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:stellar_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:stellar_energy_conduit"
+          },
+          "count": 1,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "neoecoae:circuit_cutter/superconducting_processor_print": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:circuit_cutter",
+        "input": {
+          "ingredient": {
+            "item": "neoecoae:energized_superconductive_block"
+          }
+        },
+        "output": {
+          "count": 9,
+          "id": "neoecoae:superconducting_processor_print"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:circuit_cutter",
+        "input": {
+          "ingredient": "neoecoae:energized_superconductive_block"
+        },
+        "output": {
+          "count": 9,
+          "id": "neoecoae:superconducting_processor_print"
+        },
+        "energy": 2000
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/construction_alloy_energy_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:crude_energy_conduit"
+          },
+          "I": "enderio_evolution:construction_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:construction_alloy_energy_conduit"
+          },
+          "count": 8,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:crude_energy_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:construction_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:construction_alloy_energy_conduit"
+          },
+          "count": 8,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "avaritia:mek_creative_fluid_tank": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_fluid_tank"
+              }
+            ]
+          },
+          "B": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:dynamic_tank"
+              }
+            ]
+          },
+          "C": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:structural_glass"
+              }
+            ]
+          },
+          "D": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:dynamic_valve"
+              }
+            ]
+          },
+          "I": {
+            "item": "avaritia:infinity_ingot"
+          },
+          "S": {
+            "item": "avaritia:infinity_catalyst"
+          }
+        },
+        "pattern": [
+          "         ",
+          " SAADAAS ",
+          " ABBCBBA ",
+          " ABBCBBA ",
+          " ACCICCA ",
+          " ABBCBBA ",
+          " ABBCBBA ",
+          " SAADAAS ",
+          "         "
+        ],
+        "result": {
+          "count": 1,
+          "id": "mekanism:creative_fluid_tank"
+        },
+        "tier": 4
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_fluid_tank"
+            ]
+          },
+          "B": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:dynamic_tank"
+            ]
+          },
+          "C": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:structural_glass"
+            ]
+          },
+          "D": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:dynamic_valve"
+            ]
+          },
+          "I": "avaritia:infinity_ingot",
+          "S": "avaritia:infinity_catalyst"
+        },
+        "pattern": [
+          "         ",
+          " SAADAAS ",
+          " ABBCBBA ",
+          " ABBCBBA ",
+          " ACCICCA ",
+          " ABBCBBA ",
+          " ABBCBBA ",
+          " SAADAAS ",
+          "         "
+        ],
+        "result": {
+          "count": 1,
+          "id": "mekanism:creative_fluid_tank"
+        },
+        "tier": 4
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/melodic_item_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio:ender_item"
+          },
+          "I": "enderio_evolution:melodic_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:melodic_item_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio:vibrant_item",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:melodic_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:melodic_item_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format and renamed base conduit ID migration; retain highest EnderIO base tier and original costs"
+    },
+    "enderio_evolution:conduit/stellar_fluid_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:melodic_fluid_conduit"
+          },
+          "I": "enderio_evolution:stellar_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:stellar_fluid_conduit"
+          },
+          "count": 2,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:melodic_fluid_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:stellar_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:stellar_fluid_conduit"
+          },
+          "count": 2,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/crystalline_energy_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:energetic_silver_energy_conduit"
+          },
+          "I": "enderio_evolution:crystalline_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:crystalline_energy_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:energetic_silver_energy_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:crystalline_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:crystalline_energy_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/energetic_silver_energy_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:gold_crude_energy_conduit"
+          },
+          "I": "enderio_evolution:energetic_silver_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:energetic_silver_energy_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:gold_crude_energy_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:energetic_silver_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:energetic_silver_energy_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "neoecoae:crystal_assembler/superconducting_processor": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:crystal_assembler",
+        "input_items": [
+          {
+            "amount": 4,
+            "ingredient": {
+              "item": "neoecoae:superconducting_processor_print"
+            }
+          },
+          {
+            "amount": 4,
+            "ingredient": {
+              "item": "neoecoae:crystal_matrix"
+            }
+          },
+          {
+            "amount": 4,
+            "ingredient": {
+              "item": "ae2:printed_silicon"
+            }
+          }
+        ],
+        "output": {
+          "count": 4,
+          "id": "neoecoae:superconducting_processor"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "extendedae"
+          }
+        ],
+        "type": "extendedae:crystal_assembler",
+        "input_items": [
+          {
+            "amount": 4,
+            "ingredient": "neoecoae:superconducting_processor_print"
+          },
+          {
+            "amount": 4,
+            "ingredient": "neoecoae:crystal_matrix"
+          },
+          {
+            "amount": 4,
+            "ingredient": "ae2:printed_silicon"
+          }
+        ],
+        "output": {
+          "count": 4,
+          "id": "neoecoae:superconducting_processor"
+        },
+        "energy": 2000
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/gold_crude_energy_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:construction_alloy_energy_conduit"
+          },
+          "I": "enderio_evolution:crude_steel_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:gold_crude_energy_conduit"
+          },
+          "count": 8,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:construction_alloy_energy_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:crude_steel_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:gold_crude_energy_conduit"
+          },
+          "count": 8,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "avaritia:mek_creative_energy_cube": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_energy_cube"
+              }
+            ]
+          },
+          "B": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:induction_casing"
+              }
+            ]
+          },
+          "C": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:induction_port"
+              }
+            ]
+          },
+          "D": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_induction_cell"
+              }
+            ]
+          },
+          "E": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_induction_provider"
+              }
+            ]
+          },
+          "I": {
+            "item": "avaritia:infinity_ingot"
+          },
+          "S": {
+            "item": "avaritia:infinity_catalyst"
+          }
+        },
+        "pattern": [
+          "BBBCECBBB",
+          "BDDDADDDB",
+          "BDSDADSDB",
+          "CDDDIDDDC",
+          "EAAISIAAE",
+          "CDDDIDDDC",
+          "BDSDADSDB",
+          "BDDDADDDB",
+          "BBBCECBBB"
+        ],
+        "result": {
+          "components": {
+            "mekanism:energy": {
+              "energy_containers": [
+                9223372036854775807
+              ]
+            }
+          },
+          "count": 1,
+          "id": "mekanism:creative_energy_cube"
+        },
+        "tier": 4
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_energy_cube"
+            ]
+          },
+          "B": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:induction_casing"
+            ]
+          },
+          "C": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:induction_port"
+            ]
+          },
+          "D": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_induction_cell"
+            ]
+          },
+          "E": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_induction_provider"
+            ]
+          },
+          "I": "avaritia:infinity_ingot",
+          "S": "avaritia:infinity_catalyst"
+        },
+        "pattern": [
+          "BBBCECBBB",
+          "BDDDADDDB",
+          "BDSDADSDB",
+          "CDDDIDDDC",
+          "EAAISIAAE",
+          "CDDDIDDDC",
+          "BDSDADSDB",
+          "BDDDADDDB",
+          "BBBCECBBB"
+        ],
+        "result": {
+          "components": {
+            "mekanism:energy": 9223372036854775807
+          },
+          "count": 1,
+          "id": "mekanism:creative_energy_cube"
+        },
+        "tier": 4
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "avaritia:eio_creative_power": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "enderio"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "C": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "enderio:ender_crystal"
+              }
+            ]
+          },
+          "E": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "enderio:sentient_ender"
+              }
+            ]
+          },
+          "I": {
+            "item": "avaritia:infinity_ingot"
+          },
+          "N": {
+            "item": "avaritia:neutron_ingot"
+          },
+          "V": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "enderio:vibrant_capacitor_bank"
+              }
+            ]
+          },
+          "W": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "enderio:weather_crystal"
+              }
+            ]
+          },
+          "Z": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "enderio:frank_n_zombie"
+              }
+            ]
+          }
+        },
+        "pattern": [
+          "INIIIIINI",
+          "NZEEEEEZN",
+          "IECWWWCEI",
+          "IEWZIZWEI",
+          "IEWIVIWEI",
+          "IEWZIZWEI",
+          "IECWWWCEI",
+          "NZEEEEEZN",
+          "INIIIIINI"
+        ],
+        "result": {
+          "count": 1,
+          "id": "enderio:creative_power"
+        },
+        "tier": 4
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "enderio"
+          },
+          {
+            "type": "neoforge:registered",
+            "value": "enderio:creative_power"
+          },
+          {
+            "type": "neoforge:registered",
+            "value": "enderio:vibrant_capacitor_bank"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "C": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "enderio:ender_crystal"
+            ]
+          },
+          "E": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "enderio:sentient_ender"
+            ]
+          },
+          "I": "avaritia:infinity_ingot",
+          "N": "avaritia:neutron_ingot",
+          "V": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "enderio:vibrant_capacitor_bank"
+            ]
+          },
+          "W": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "enderio:weather_crystal"
+            ]
+          },
+          "Z": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "enderio:frank_n_zombie"
+            ]
+          }
+        },
+        "pattern": [
+          "INIIIIINI",
+          "NZEEEEEZN",
+          "IECWWWCEI",
+          "IEWZIZWEI",
+          "IEWIVIWEI",
+          "IEWZIZWEI",
+          "IECWWWCEI",
+          "NZEEEEEZN",
+          "INIIIIINI"
+        ],
+        "result": {
+          "count": 1,
+          "id": "enderio:creative_power"
+        },
+        "tier": 4
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/stellar_item_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:melodic_item_conduit"
+          },
+          "I": "enderio_evolution:stellar_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:stellar_item_conduit"
+          },
+          "count": 2,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:melodic_item_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:stellar_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:stellar_item_conduit"
+          },
+          "count": 2,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "avaritia:mek_creative_chemical_tank": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_chemical_tank"
+              }
+            ]
+          },
+          "B": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:dynamic_tank"
+              }
+            ]
+          },
+          "C": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:structural_glass"
+              }
+            ]
+          },
+          "D": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:dynamic_valve"
+              }
+            ]
+          },
+          "I": {
+            "item": "avaritia:infinity_ingot"
+          },
+          "S": {
+            "item": "avaritia:infinity_catalyst"
+          }
+        },
+        "pattern": [
+          "   B B   ",
+          " SAADAAS ",
+          " ABBBBBA ",
+          " ABBCBBA ",
+          " ABCICBA ",
+          " ABBCBBA ",
+          " ABBBBBA ",
+          " SAADAAS ",
+          "         "
+        ],
+        "result": {
+          "count": 1,
+          "id": "mekanism:creative_chemical_tank"
+        },
+        "tier": 4
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_chemical_tank"
+            ]
+          },
+          "B": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:dynamic_tank"
+            ]
+          },
+          "C": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:structural_glass"
+            ]
+          },
+          "D": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:dynamic_valve"
+            ]
+          },
+          "I": "avaritia:infinity_ingot",
+          "S": "avaritia:infinity_catalyst"
+        },
+        "pattern": [
+          "   B B   ",
+          " SAADAAS ",
+          " ABBBBBA ",
+          " ABBCBBA ",
+          " ABCICBA ",
+          " ABBCBBA ",
+          " ABBBBBA ",
+          " SAADAAS ",
+          "         "
+        ],
+        "result": {
+          "count": 1,
+          "id": "mekanism:creative_chemical_tank"
+        },
+        "tier": 4
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/crystalline_pink_slime_energy_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:crystalline_energy_conduit"
+          },
+          "I": "enderio_evolution:crystalline_pink_slime_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:crystalline_pink_slime_energy_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:crystalline_energy_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:crystalline_pink_slime_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:crystalline_pink_slime_energy_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "avaritia:mek_creative_bin": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanismgenerators"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanismgenerators:fusion_reactor_frame"
+              }
+            ]
+          },
+          "B": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_energy_cube"
+              }
+            ]
+          },
+          "C": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_fluid_tank"
+              }
+            ]
+          },
+          "D": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_chemical_tank"
+              }
+            ]
+          },
+          "E": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "mekanism:ultimate_bin"
+              }
+            ]
+          },
+          "I": {
+            "item": "avaritia:infinity_ingot"
+          },
+          "S": {
+            "item": "avaritia:infinity_catalyst"
+          }
+        },
+        "pattern": [
+          "AAAAAAAAA",
+          "AEIIIIIEA",
+          "AEIIIIIEA",
+          "AEIIIIIEA",
+          "AEEESEEEA",
+          "AEEEEEEEA",
+          "AEBCDCBEA",
+          "AEBCDCBEA",
+          "AAAAAAAAA"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mekanism:creative_bin"
+        },
+        "tier": 4
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanismgenerators"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanismgenerators:fusion_reactor_frame"
+            ]
+          },
+          "B": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_energy_cube"
+            ]
+          },
+          "C": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_fluid_tank"
+            ]
+          },
+          "D": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_chemical_tank"
+            ]
+          },
+          "E": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "mekanism:ultimate_bin"
+            ]
+          },
+          "I": "avaritia:infinity_ingot",
+          "S": "avaritia:infinity_catalyst"
+        },
+        "pattern": [
+          "AAAAAAAAA",
+          "AEIIIIIEA",
+          "AEIIIIIEA",
+          "AEIIIIIEA",
+          "AEEESEEEA",
+          "AEEEEEEEA",
+          "AEBCDCBEA",
+          "AEBCDCBEA",
+          "AAAAAAAAA"
+        ],
+        "result": {
+          "count": 1,
+          "id": "mekanism:creative_bin"
+        },
+        "tier": 4
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/melodic_energy_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio_evolution:crystalline_pink_slime_energy_conduit"
+          },
+          "I": "enderio_evolution:melodic_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:melodic_energy_conduit"
+          },
+          "count": 2,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio_evolution:crystalline_pink_slime_energy_conduit",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:melodic_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:melodic_energy_conduit"
+          },
+          "count": 2,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/melodic_fluid_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio:ender_fluid"
+          },
+          "I": "enderio_evolution:melodic_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:melodic_fluid_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio:vibrant_fluid",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "enderio_evolution:melodic_alloy_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:melodic_fluid_conduit"
+          },
+          "count": 4,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format and renamed base conduit ID migration; retain highest EnderIO base tier and original costs"
+    },
+    "enderio_evolution:conduit/speedy_item_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": {
+            "type": "enderio:conduit",
+            "conduit_type": "enderio:item"
+          },
+          "I": "minecraft:ender_eye"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:speedy_item_conduit"
+          },
+          "count": 1,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": {
+            "conduit_type": "enderio:item",
+            "neoforge:ingredient_type": "enderio:conduit"
+          },
+          "I": "minecraft:ender_eye"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:speedy_item_conduit"
+          },
+          "count": 1,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/energetic_silver_energy_conduit_from_diamond": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "C": "minecraft:diamond",
+          "I": "enderio_evolution:energetic_silver_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:energetic_silver_energy_conduit"
+          },
+          "count": 8,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "C": "minecraft:diamond",
+          "I": "enderio_evolution:energetic_silver_ingot"
+        },
+        "pattern": [
+          "BBB",
+          "ICI",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:energetic_silver_energy_conduit"
+          },
+          "count": 8,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "enderio_evolution:conduit/crude_energy_conduit": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": {
+            "item": "enderio:conduit_binder"
+          },
+          "I": [
+            "minecraft:copper_ingot",
+            "minecraft:iron_ingot"
+          ]
+        },
+        "pattern": [
+          "BBB",
+          "III",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:crude_energy_conduit"
+          },
+          "count": 8,
+          "id": "enderio:conduit"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "B": "enderio:conduit_binder",
+          "I": [
+            "minecraft:copper_ingot",
+            "minecraft:iron_ingot"
+          ]
+        },
+        "pattern": [
+          "BBB",
+          "III",
+          "BBB"
+        ],
+        "result": {
+          "components": {
+            "enderio:conduit": "enderio_evolution:crude_energy_conduit"
+          },
+          "count": 8,
+          "id": "enderio:conduit"
+        }
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "avaritia:ae2_creative_energy_cell": {
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "ae2"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "ae2:vibration_chamber"
+              }
+            ]
+          },
+          "B": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "ae2:calculation_processor"
+              }
+            ]
+          },
+          "C": {
+            "item": "avaritia:infinity_ingot"
+          },
+          "D": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "ae2:cell_component_256k"
+              }
+            ]
+          },
+          "X": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "ae2:singularity"
+              }
+            ]
+          },
+          "Y": {
+            "type": "neoforge:compound",
+            "ingredients": [
+              {
+                "item": "ae2:dense_energy_cell"
+              }
+            ]
+          }
+        },
+        "pattern": [
+          "YYYYXYYYY",
+          "YCACXCACY",
+          "YACBXBCAY",
+          "YCBBXBBCY",
+          "XXXXDXXXX",
+          "YCBBXBBCY",
+          "YACBXBCAY",
+          "YCACXCACY",
+          "YYYYXYYYY"
+        ],
+        "result": {
+          "count": 1,
+          "id": "ae2:creative_energy_cell"
+        },
+        "tier": 4
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "ae2"
+          }
+        ],
+        "type": "avaritia:shaped_table",
+        "key": {
+          "A": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "ae2:vibration_chamber"
+            ]
+          },
+          "B": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "ae2:calculation_processor"
+            ]
+          },
+          "C": "avaritia:infinity_ingot",
+          "D": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "ae2:cell_component_256k"
+            ]
+          },
+          "X": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "ae2:singularity"
+            ]
+          },
+          "Y": {
+            "neoforge:ingredient_type": "neoforge:compound",
+            "children": [
+              "ae2:dense_energy_cell"
+            ]
+          }
+        },
+        "pattern": [
+          "YYYYXYYYY",
+          "YCACXCACY",
+          "YACBXBCAY",
+          "YCBBXBBCY",
+          "XXXXDXXXX",
+          "YCBBXBBCY",
+          "YACBXBCAY",
+          "YCACXCACY",
+          "YYYYXYYYY"
+        ],
+        "result": {
+          "count": 1,
+          "id": "ae2:creative_energy_cell"
+        },
+        "tier": 4
+      },
+      "reason": "compatibility format migration; original costs, layout and component requirements preserved"
+    },
+    "iceandfire:armor_copper_metal_boots": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "# #",
+          "# #"
+        ],
+        "result": {
+          "id": "iceandfire:armor_copper_metal_boots"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "##",
+          "  ",
+          "##"
+        ],
+        "result": {
+          "id": "iceandfire:armor_copper_metal_boots"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "iceandfire:armor_copper_metal_chestplate": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "# #",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "iceandfire:armor_copper_metal_chestplate"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "###",
+          "## ",
+          "###"
+        ],
+        "result": {
+          "id": "iceandfire:armor_copper_metal_chestplate"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "iceandfire:armor_copper_metal_helmet": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "###",
+          "# #"
+        ],
+        "result": {
+          "id": "iceandfire:armor_copper_metal_helmet"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "##",
+          " #",
+          "##"
+        ],
+        "result": {
+          "id": "iceandfire:armor_copper_metal_helmet"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "iceandfire:armor_copper_metal_leggings": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "# #"
+        ],
+        "result": {
+          "id": "iceandfire:armor_copper_metal_leggings"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "###",
+          "  #",
+          "###"
+        ],
+        "result": {
+          "id": "iceandfire:armor_copper_metal_leggings"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "iceandfire:copper_axe": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "MM",
+          "MH",
+          " H"
+        ],
+        "result": {
+          "id": "iceandfire:copper_axe"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          " MM",
+          "HHM"
+        ],
+        "result": {
+          "id": "iceandfire:copper_axe"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "iceandfire:copper_hoe": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "MM",
+          " H",
+          " H"
+        ],
+        "result": {
+          "id": "iceandfire:copper_hoe"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "  M",
+          "HHM"
+        ],
+        "result": {
+          "id": "iceandfire:copper_hoe"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "iceandfire:copper_pickaxe": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "MMM",
+          " H ",
+          " H "
+        ],
+        "result": {
+          "id": "iceandfire:copper_pickaxe"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "  M",
+          "HHM",
+          "  M"
+        ],
+        "result": {
+          "id": "iceandfire:copper_pickaxe"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "iceandfire:copper_shovel": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "M",
+          "H",
+          "H"
+        ],
+        "result": {
+          "id": "iceandfire:copper_shovel"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "HHM"
+        ],
+        "result": {
+          "id": "iceandfire:copper_shovel"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "iceandfire:copper_sword": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "M",
+          "M",
+          "H"
+        ],
+        "result": {
+          "id": "iceandfire:copper_sword"
+        },
+        "show_notification": true
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "H": "minecraft:stick",
+          "M": "minecraft:copper_ingot"
+        },
+        "pattern": [
+          "HMM"
+        ],
+        "result": {
+          "id": "iceandfire:copper_sword"
+        },
+        "show_notification": true
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "prefab:swift_blade_diamond": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          "  a",
+          " a ",
+          "b  "
+        ],
+        "key": {
+          "a": "minecraft:diamond",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_diamond",
+          "count": 1
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          " aa",
+          "b  "
+        ],
+        "key": {
+          "a": "minecraft:diamond",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_diamond",
+          "count": 1
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "prefab:swift_blade_gold": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          "  a",
+          " a ",
+          "b  "
+        ],
+        "key": {
+          "a": "minecraft:gold_ingot",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_gold",
+          "count": 1
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          " aa",
+          "b  "
+        ],
+        "key": {
+          "a": "minecraft:gold_ingot",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_gold",
+          "count": 1
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "prefab:swift_blade_iron": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          "  a",
+          " a ",
+          "b  "
+        ],
+        "key": {
+          "a": "minecraft:iron_ingot",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_iron",
+          "count": 1
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          " aa",
+          "b  "
+        ],
+        "key": {
+          "a": "minecraft:iron_ingot",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_iron",
+          "count": 1
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "prefab:swift_blade_stone": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          "  a",
+          " a ",
+          "b  "
+        ],
+        "key": {
+          "a": "minecraft:cobblestone",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_stone",
+          "count": 1
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          " aa",
+          "b  "
+        ],
+        "key": {
+          "a": "minecraft:cobblestone",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_stone",
+          "count": 1
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "prefab:swift_blade_wood": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          "  a",
+          " a ",
+          "b  "
+        ],
+        "key": {
+          "a": "#minecraft:planks",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_wood",
+          "count": 1
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "configName": "Swift Blade",
+        "fabric:load_conditions": [
+          {
+            "condition": "prefab:recipe_enabled",
+            "configName": "Swift Blade"
+          }
+        ],
+        "neoforge:conditions": [
+          {
+            "type": "prefab:recipe_enabled",
+            "value": "Swift Blade"
+          }
+        ],
+        "group": "Swift Blade",
+        "pattern": [
+          " aa",
+          "b  "
+        ],
+        "key": {
+          "a": "#minecraft:planks",
+          "b": "minecraft:stick"
+        },
+        "result": {
+          "id": "prefab:item_swift_blade_wood",
+          "count": 1
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "cakesticklib:chisel": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "I": "#c:ingots/iron",
+          "S": "minecraft:stick"
+        },
+        "pattern": [
+          "  I",
+          " I ",
+          "S  "
+        ],
+        "result": {
+          "id": "cakesticklib:chisel"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "I": "#c:ingots/iron",
+          "S": "minecraft:stick"
+        },
+        "pattern": [
+          "I ",
+          "SI"
+        ],
+        "result": {
+          "id": "cakesticklib:chisel"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "constructionwand:stone_wand": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#minecraft:stone_tool_materials"
+        },
+        "pattern": [
+          "  X",
+          " # ",
+          "#  "
+        ],
+        "result": {
+          "id": "constructionwand:stone_wand"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#minecraft:stone_tool_materials"
+        },
+        "pattern": [
+          " X",
+          "# ",
+          "# "
+        ],
+        "result": {
+          "id": "constructionwand:stone_wand"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "constructionwand:stone_wand_alt1": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#minecraft:stone_tool_materials"
+        },
+        "pattern": [
+          "X  ",
+          " # ",
+          "  #"
+        ],
+        "result": {
+          "id": "constructionwand:stone_wand"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#minecraft:stone_tool_materials"
+        },
+        "pattern": [
+          " X",
+          "# ",
+          "# "
+        ],
+        "result": {
+          "id": "constructionwand:stone_wand"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "constructionwand:iron_wand": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#c:ingots/iron"
+        },
+        "pattern": [
+          "  X",
+          " # ",
+          "#  "
+        ],
+        "result": {
+          "id": "constructionwand:iron_wand"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#c:ingots/iron"
+        },
+        "pattern": [
+          " X",
+          "# ",
+          "# "
+        ],
+        "result": {
+          "id": "constructionwand:iron_wand"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "constructionwand:iron_wand_alt1": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#c:ingots/iron"
+        },
+        "pattern": [
+          "X  ",
+          " # ",
+          "  #"
+        ],
+        "result": {
+          "id": "constructionwand:iron_wand"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#c:ingots/iron"
+        },
+        "pattern": [
+          " X",
+          "# ",
+          "# "
+        ],
+        "result": {
+          "id": "constructionwand:iron_wand"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "constructionwand:diamond_wand": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#c:gems/diamond"
+        },
+        "pattern": [
+          "  X",
+          " # ",
+          "#  "
+        ],
+        "result": {
+          "id": "constructionwand:diamond_wand"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#c:gems/diamond"
+        },
+        "pattern": [
+          " X",
+          "# ",
+          "# "
+        ],
+        "result": {
+          "id": "constructionwand:diamond_wand"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "constructionwand:diamond_wand_alt1": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#c:gems/diamond"
+        },
+        "pattern": [
+          "X  ",
+          " # ",
+          "  #"
+        ],
+        "result": {
+          "id": "constructionwand:diamond_wand"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "key": {
+          "#": "#c:rods/wooden",
+          "X": "#c:gems/diamond"
+        },
+        "pattern": [
+          " X",
+          "# ",
+          "# "
+        ],
+        "result": {
+          "id": "constructionwand:diamond_wand"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "tofucraft:tofu_fence_dried": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "M": "tofucraft:block_tofu_dried"
+        },
+        "pattern": [
+          "MMM",
+          "MMM"
+        ],
+        "result": {
+          "count": 6,
+          "id": "tofucraft:tofu_fence_dried"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "M": "tofucraft:block_tofu_dried"
+        },
+        "pattern": [
+          "MMM",
+          "   ",
+          "MMM"
+        ],
+        "result": {
+          "count": 6,
+          "id": "tofucraft:tofu_fence_dried"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "tofucraft:tofu_fence_egg": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "M": "tofucraft:block_tofu_egg"
+        },
+        "pattern": [
+          "MMM",
+          "MMM"
+        ],
+        "result": {
+          "count": 6,
+          "id": "tofucraft:tofu_fence_egg"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "M": "tofucraft:block_tofu_egg"
+        },
+        "pattern": [
+          "MMM",
+          "   ",
+          "MMM"
+        ],
+        "result": {
+          "count": 6,
+          "id": "tofucraft:tofu_fence_egg"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "tofucraft:tofu_fence_miso": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "M": "tofucraft:block_tofu_miso"
+        },
+        "pattern": [
+          "MMM",
+          "MMM"
+        ],
+        "result": {
+          "count": 6,
+          "id": "tofucraft:tofu_fence_miso"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "M": "tofucraft:block_tofu_miso"
+        },
+        "pattern": [
+          "MMM",
+          "   ",
+          "MMM"
+        ],
+        "result": {
+          "count": 6,
+          "id": "tofucraft:tofu_fence_miso"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "tofucraft:tofu_fence_sesame": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "M": "tofucraft:block_tofu_sesame"
+        },
+        "pattern": [
+          "MMM",
+          "MMM"
+        ],
+        "result": {
+          "count": 6,
+          "id": "tofucraft:tofu_fence_sesame"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "M": "tofucraft:block_tofu_sesame"
+        },
+        "pattern": [
+          "MMM",
+          "   ",
+          "MMM"
+        ],
+        "result": {
+          "count": 6,
+          "id": "tofucraft:tofu_fence_sesame"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "cakesticklib:blank_mold": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "#": "#c:plates/steel"
+        },
+        "pattern": [
+          "##",
+          "##"
+        ],
+        "result": {
+          "id": "cakesticklib:blank_mold"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "#": "#c:plates/steel"
+        },
+        "pattern": [
+          "# #",
+          "   ",
+          "# #"
+        ],
+        "result": {
+          "id": "cakesticklib:blank_mold"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "extendedae:mddyue": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "M": "minecraft:egg"
+        },
+        "pattern": [
+          "MMM",
+          "M M",
+          "MMM"
+        ],
+        "result": {
+          "id": "extendedae:mddyue"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "M": "minecraft:egg"
+        },
+        "pattern": [
+          " MM",
+          "MMM",
+          "MMM"
+        ],
+        "result": {
+          "id": "extendedae:mddyue"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:wood/canopy_chest": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:canopy_planks"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:canopy_chest"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:canopy_planks"
+        },
+        "pattern": [
+          " ##",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:canopy_chest"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:wood/dark_chest": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:dark_planks"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:dark_chest"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:dark_planks"
+        },
+        "pattern": [
+          " ##",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:dark_chest"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:wood/mangrove_chest": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:mangrove_planks"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:mangrove_chest"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:mangrove_planks"
+        },
+        "pattern": [
+          " ##",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:mangrove_chest"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:wood/mining_chest": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:mining_planks"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:mining_chest"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:mining_planks"
+        },
+        "pattern": [
+          " ##",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:mining_chest"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:wood/sorting_chest": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:sorting_planks"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:sorting_chest"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:sorting_planks"
+        },
+        "pattern": [
+          " ##",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:sorting_chest"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:wood/time_chest": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:time_planks"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:time_chest"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:time_planks"
+        },
+        "pattern": [
+          " ##",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:time_chest"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:wood/transformation_chest": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:transformation_planks"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:transformation_chest"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:transformation_planks"
+        },
+        "pattern": [
+          " ##",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:transformation_chest"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:wood/twilight_oak_chest": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:twilight_oak_planks"
+        },
+        "pattern": [
+          "###",
+          "# #",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:twilight_oak_chest"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "group": "chest",
+        "key": {
+          "#": "twilightforest:twilight_oak_planks"
+        },
+        "pattern": [
+          " ##",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "twilightforest:twilight_oak_chest"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "twilightforest:chiseled_canopy_bookshelf": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "-": "twilightforest:canopy_planks",
+          "s": "twilightforest:canopy_slab"
+        },
+        "pattern": [
+          "---",
+          "sss",
+          "---"
+        ],
+        "result": {
+          "id": "twilightforest:chiseled_canopy_bookshelf"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "key": {
+          "-": "twilightforest:canopy_planks",
+          "s": "twilightforest:canopy_slab"
+        },
+        "pattern": [
+          "-s-",
+          "-s-",
+          "-s-"
+        ],
+        "result": {
+          "id": "twilightforest:chiseled_canopy_bookshelf"
+        }
+      },
+      "reason": "distinct crafting layout; identical ingredient multiset and output"
+    },
+    "aquaculture:obsidian_note_hook": {
+      "before": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "aquaculture:iron_hook",
+          "minecraft:note_block"
+        ],
+        "result": {
+          "id": "aquaculture:obsidian_note_hook"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "aquaculture:obsidian_hook",
+          "minecraft:note_block"
+        ],
+        "result": {
+          "id": "aquaculture:obsidian_note_hook"
+        }
+      },
+      "reason": "obsidian note hook uses the obsidian hook base"
+    },
+    "modern_industrialization:electric_age/transformer/lv_mv/down": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "H": "modern_industrialization:basic_machine_hull",
+          "I": "modern_industrialization:electrum_cable",
+          "O": "modern_industrialization:tin_cable"
+        },
+        "pattern": [
+          " OO",
+          "IH ",
+          " OO"
+        ],
+        "result": {
+          "id": "modern_industrialization:mv_lv_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "result": {
+          "id": "modern_industrialization:mv_lv_transformer"
+        },
+        "ingredients": [
+          {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:lv_mv_transformer"
+          }
+        ]
+      },
+      "reason": "1:1 direction conversion from the normally crafted up transformer"
+    },
+    "modern_industrialization:assembler_generated/electric_age/transformer/lv_mv/down": {
+      "before": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "modern_industrialization:basic_machine_hull"
+          },
+          {
+            "amount": 1,
+            "ingredient": "modern_industrialization:electrum_cable"
+          },
+          {
+            "amount": 4,
+            "ingredient": "modern_industrialization:tin_cable"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:mv_lv_transformer"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "ingredient": {
+              "neoforge:ingredient_type": "sise_compat:pristine",
+              "item": "modern_industrialization:lv_mv_transformer"
+            },
+            "amount": 1
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:mv_lv_transformer"
+          }
+        ]
+      },
+      "reason": "assembler direction conversion; original EU/t and duration retained"
+    },
+    "modern_industrialization:electric_age/transformer/mv_hv/down": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "H": "modern_industrialization:advanced_machine_hull",
+          "I": "modern_industrialization:aluminum_cable",
+          "O": "modern_industrialization:electrum_cable"
+        },
+        "pattern": [
+          " OO",
+          "IH ",
+          " OO"
+        ],
+        "result": {
+          "id": "modern_industrialization:hv_mv_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "result": {
+          "id": "modern_industrialization:hv_mv_transformer"
+        },
+        "ingredients": [
+          {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:mv_hv_transformer"
+          }
+        ]
+      },
+      "reason": "1:1 direction conversion from the normally crafted up transformer"
+    },
+    "modern_industrialization:assembler_generated/electric_age/transformer/mv_hv/down": {
+      "before": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "modern_industrialization:advanced_machine_hull"
+          },
+          {
+            "amount": 1,
+            "ingredient": "modern_industrialization:aluminum_cable"
+          },
+          {
+            "amount": 4,
+            "ingredient": "modern_industrialization:electrum_cable"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:hv_mv_transformer"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "ingredient": {
+              "neoforge:ingredient_type": "sise_compat:pristine",
+              "item": "modern_industrialization:mv_hv_transformer"
+            },
+            "amount": 1
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:hv_mv_transformer"
+          }
+        ]
+      },
+      "reason": "assembler direction conversion; original EU/t and duration retained"
+    },
+    "modern_industrialization:electric_age/transformer/hv_ev/down": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "H": "modern_industrialization:turbo_machine_hull",
+          "I": "modern_industrialization:annealed_copper_cable",
+          "O": "modern_industrialization:aluminum_cable"
+        },
+        "pattern": [
+          " OO",
+          "IH ",
+          " OO"
+        ],
+        "result": {
+          "id": "modern_industrialization:ev_hv_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "result": {
+          "id": "modern_industrialization:ev_hv_transformer"
+        },
+        "ingredients": [
+          {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:hv_ev_transformer"
+          }
+        ]
+      },
+      "reason": "1:1 direction conversion from the normally crafted up transformer"
+    },
+    "modern_industrialization:assembler_generated/electric_age/transformer/hv_ev/down": {
+      "before": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "modern_industrialization:turbo_machine_hull"
+          },
+          {
+            "amount": 1,
+            "ingredient": "modern_industrialization:annealed_copper_cable"
+          },
+          {
+            "amount": 4,
+            "ingredient": "modern_industrialization:aluminum_cable"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:ev_hv_transformer"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "ingredient": {
+              "neoforge:ingredient_type": "sise_compat:pristine",
+              "item": "modern_industrialization:hv_ev_transformer"
+            },
+            "amount": 1
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:ev_hv_transformer"
+          }
+        ]
+      },
+      "reason": "assembler direction conversion; original EU/t and duration retained"
+    },
+    "modern_industrialization:electric_age/transformer/ev_supra/down": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "H": "modern_industrialization:highly_advanced_machine_hull",
+          "I": "modern_industrialization:superconductor_cable",
+          "O": "modern_industrialization:annealed_copper_cable"
+        },
+        "pattern": [
+          " OO",
+          "IH ",
+          " OO"
+        ],
+        "result": {
+          "id": "modern_industrialization:superconductor_ev_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "result": {
+          "id": "modern_industrialization:superconductor_ev_transformer"
+        },
+        "ingredients": [
+          {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:ev_superconductor_transformer"
+          }
+        ]
+      },
+      "reason": "1:1 direction conversion from the normally crafted up transformer"
+    },
+    "modern_industrialization:assembler_generated/electric_age/transformer/ev_supra/down": {
+      "before": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "modern_industrialization:highly_advanced_machine_hull"
+          },
+          {
+            "amount": 1,
+            "ingredient": "modern_industrialization:superconductor_cable"
+          },
+          {
+            "amount": 4,
+            "ingredient": "modern_industrialization:annealed_copper_cable"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:superconductor_ev_transformer"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:assembler",
+        "duration": 200,
+        "eu": 8,
+        "item_inputs": [
+          {
+            "ingredient": {
+              "neoforge:ingredient_type": "sise_compat:pristine",
+              "item": "modern_industrialization:ev_superconductor_transformer"
+            },
+            "amount": 1
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:superconductor_ev_transformer"
+          }
+        ]
+      },
+      "reason": "assembler direction conversion; original EU/t and duration retained"
+    },
+    "justdirethings:charcoal_9x9": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "building",
+        "group": "justdirethings",
+        "key": {
+          "#": "minecraft:charcoal"
+        },
+        "pattern": [
+          "###",
+          "###",
+          "###"
+        ],
+        "result": {
+          "id": "justdirethings:charcoal"
+        }
+      },
+      "after": {
+        "type": "minecraft:stonecutting",
+        "group": "justdirethings",
+        "result": {
+          "id": "justdirethings:charcoal"
+        },
+        "ingredient": {
+          "neoforge:ingredient_type": "sise_compat:pristine",
+          "item": "mekanism:block_charcoal"
+        }
+      },
+      "reason": "selectable 1:1 charcoal block conversion; original nine-charcoal material cost retained via MEK packing"
+    },
+    "modern_industrialization:electric_age/transformer/lv_mv/up_to_down": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": "modern_industrialization:lv_mv_transformer"
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:mv_lv_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:lv_mv_transformer"
+          }
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:mv_lv_transformer"
+        }
+      },
+      "reason": "protect existing alternate direction conversion from consuming machine data components"
+    },
+    "modern_industrialization:electric_age/transformer/lv_mv/down_to_up": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": "modern_industrialization:mv_lv_transformer"
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:lv_mv_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:mv_lv_transformer"
+          }
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:lv_mv_transformer"
+        }
+      },
+      "reason": "protect existing alternate direction conversion from consuming machine data components"
+    },
+    "modern_industrialization:electric_age/transformer/mv_hv/up_to_down": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": "modern_industrialization:mv_hv_transformer"
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:hv_mv_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:mv_hv_transformer"
+          }
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:hv_mv_transformer"
+        }
+      },
+      "reason": "protect existing alternate direction conversion from consuming machine data components"
+    },
+    "modern_industrialization:electric_age/transformer/mv_hv/down_to_up": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": "modern_industrialization:hv_mv_transformer"
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:mv_hv_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:hv_mv_transformer"
+          }
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:mv_hv_transformer"
+        }
+      },
+      "reason": "protect existing alternate direction conversion from consuming machine data components"
+    },
+    "modern_industrialization:electric_age/transformer/hv_ev/up_to_down": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": "modern_industrialization:hv_ev_transformer"
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:ev_hv_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:hv_ev_transformer"
+          }
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:ev_hv_transformer"
+        }
+      },
+      "reason": "protect existing alternate direction conversion from consuming machine data components"
+    },
+    "modern_industrialization:electric_age/transformer/hv_ev/down_to_up": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": "modern_industrialization:ev_hv_transformer"
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:hv_ev_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:ev_hv_transformer"
+          }
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:hv_ev_transformer"
+        }
+      },
+      "reason": "protect existing alternate direction conversion from consuming machine data components"
+    },
+    "modern_industrialization:electric_age/transformer/ev_supra/up_to_down": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": "modern_industrialization:ev_superconductor_transformer"
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:superconductor_ev_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:ev_superconductor_transformer"
+          }
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:superconductor_ev_transformer"
+        }
+      },
+      "reason": "protect existing alternate direction conversion from consuming machine data components"
+    },
+    "modern_industrialization:electric_age/transformer/ev_supra/down_to_up": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": "modern_industrialization:superconductor_ev_transformer"
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:ev_superconductor_transformer"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "X": {
+            "neoforge:ingredient_type": "sise_compat:pristine",
+            "item": "modern_industrialization:superconductor_ev_transformer"
+          }
+        },
+        "pattern": [
+          "X"
+        ],
+        "result": {
+          "id": "modern_industrialization:ev_superconductor_transformer"
+        }
+      },
+      "reason": "protect existing alternate direction conversion from consuming machine data components"
+    }
+  },
+  "additions": {
+    "sise_compat:manual/transformer/lv_mv": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "neoforge:ingredient_type": "sise_compat:pristine",
+        "item": "modern_industrialization:mv_lv_transformer"
+      },
+      "result": {
+        "id": "modern_industrialization:lv_mv_transformer"
+      }
+    },
+    "sise_compat:manual/transformer/mv_hv": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "neoforge:ingredient_type": "sise_compat:pristine",
+        "item": "modern_industrialization:hv_mv_transformer"
+      },
+      "result": {
+        "id": "modern_industrialization:mv_hv_transformer"
+      }
+    },
+    "sise_compat:manual/transformer/hv_ev": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "neoforge:ingredient_type": "sise_compat:pristine",
+        "item": "modern_industrialization:ev_hv_transformer"
+      },
+      "result": {
+        "id": "modern_industrialization:hv_ev_transformer"
+      }
+    },
+    "sise_compat:manual/transformer/ev_supra": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "neoforge:ingredient_type": "sise_compat:pristine",
+        "item": "modern_industrialization:superconductor_ev_transformer"
+      },
+      "result": {
+        "id": "modern_industrialization:ev_superconductor_transformer"
+      }
+    },
+    "sise_compat:manual/charcoal": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "neoforge:ingredient_type": "sise_compat:pristine",
+        "item": "justdirethings:charcoal"
+      },
+      "result": {
+        "id": "mekanism:block_charcoal"
+      }
+    }
+  }
+}

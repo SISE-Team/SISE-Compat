@@ -1,0 +1,57 @@
+{
+  "version": "0.1.1+26.1.2",
+  "verified_on": "2026-10-11",
+  "paired_sise_ores_version": "0.2.0",
+  "neoforge_version": "26.1.2.114",
+  "passed": true,
+  "patches": 76,
+  "manual_conversion_additions": 5,
+  "artifact_sha256": "1ef6be73c29af06f60bea117e8a2a52cb2d9395f4c61b29cf28bb5f53ad93caf",
+  "static_assertions": 229,
+  "full_client_assertions": 12356,
+  "gameplay": {
+    "positive_container_cases": 266,
+    "unique_positive_recipes": 266,
+    "named_transformer_cases": 12,
+    "placed_machine_cases": 15,
+    "all_passed": true,
+    "gameplay_errors": []
+  },
+  "audit": {
+    "loaded_recipes": 16857,
+    "serializer_types": 250,
+    "encode_errors": 0,
+    "remaining_legacy_references": 0,
+    "actual_recipe_load_errors": 0,
+    "crafting_recipes_domain_checked": 7842,
+    "crafting_pair_comparisons": 6572727,
+    "crafting_conflicts": 0,
+    "new_crafting_conflicts": 0,
+    "machine_exact_input_conflicts": 1607,
+    "new_machine_exact_input_conflicts": 0,
+    "tag_compatibility_gaps": 0,
+    "material_mass_recipes_checked": 757,
+    "material_mass_gains": 0,
+    "runtime_execution_passed": 12230,
+    "runtime_execution_errors": 0,
+    "runtime_crafting_conflicts_confirmed": 0,
+    "mi_effective_recipes": 2907,
+    "mi_legacy_references": 0,
+    "reload_identical": true,
+    "restored_compat_recipes": 21,
+    "resolved_previous_crafting_pairs": 43,
+    "introduced_since_baseline_crafting_pairs": 0,
+    "disabled_missing_item_recipes": [
+      "avaritia:eio_creative_power"
+    ],
+    "preexisting_automatic_machine_candidates": 73,
+    "introduced_automatic_machine_pairs": 0,
+    "resolved_automatic_machine_pairs": 4
+  },
+  "installation_verified_other_mods_unchanged": 207,
+  "installation_verified_core_files_unchanged": 3,
+  "limits": [
+    "Historical verification summary, not a new gameplay run during publication.",
+    "73 pre-existing automatic-machine input candidates remain; arbitrary component combinations and machine cycles were not exhaustively tested."
+  ]
+}
