@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "#c:storage_blocks/vibranium",
+      "required": false
+    },
+    {
+      "id": "allthemodium:vibranium_block",
+      "required": false
+    },
+    {
+      "id": "alltheores:vibranium_block",
+      "required": false
+    }
+  ]
+}

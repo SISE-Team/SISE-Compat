@@ -1,0 +1,11 @@
+{
+  "music.tofu_dungeon": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "tofucraft:music/rough_ground",
+        "stream": true
+      }
+    ]
+  }
+}

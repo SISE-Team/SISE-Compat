@@ -39,7 +39,7 @@ final class CompatChecks {
     static List<String> verify(MinecraftServer server) {
         checks.clear();
         check(((Map<?,?>)RecipePatches.lastReport.get("skipped")).isEmpty(),"all compatibility source guards matched");
-        check(((Map<?,?>)RecipePatches.lastReport.get("applied")).size()==93,"93 reviewed compatibility patches applied");
+        check(((Map<?,?>)RecipePatches.lastReport.get("applied")).size()==87,"87 reviewed compatibility patches applied");
         check(server.getRecipeManager().byKey(ResourceKey.create(Registries.RECIPE,Identifier.parse("avaritia:eio_creative_power"))).isEmpty(),"missing EnderIO creative power disabled by registry conditions");
         var ops = server.registryAccess().createSerializationContext(JsonOps.INSTANCE);
         int restored = 0;

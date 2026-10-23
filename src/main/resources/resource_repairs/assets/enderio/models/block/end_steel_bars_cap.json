@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/iron_bars_cap",
+  "textures": {
+    "bars": "enderio:block/end_steel_bars",
+    "particle": "enderio:block/end_steel_bars"
+  }
+}

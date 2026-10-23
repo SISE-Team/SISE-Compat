@@ -1,0 +1,2767 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "ae2lt",
+        "path": "item/extreme_high_voltage_lightning"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "ae2lt",
+        "path": "item/high_voltage_lightning"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "aquaculture",
+        "path": "entity/chest/neptunes_bounty"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "ic2",
+        "path": "entity/signs/rubber"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/amphithere"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/bird"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/dread"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/eye"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/fae"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/feather"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/fire"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/fire_head"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/gorgon"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/hippocampus"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/hippogryph_head"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/ice"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/ice_head"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/lightning"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/lightning_head"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/mermaid"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/sea_serpent"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/troll"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/unicorn"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/banner/weezer"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/chest/ghost_chest"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/chest/ghost_chest_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "iceandfire",
+        "path": "entity/chest/ghost_chest_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/black"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/blue"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/brown"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/cyan"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/gray"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/green"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/light_blue"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/light_gray"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/lime"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/magenta"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/orange"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/pink"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/purple"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/red"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/white"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "kaleidoscope_cookery",
+        "path": "entity/banner/yellow"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lavafishing",
+        "path": "entity/chest/prometheus_bounty"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/copper"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/copper_exposed"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/copper_exposed_opened"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/copper_opened"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/copper_oxidized"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/copper_oxidized_opened"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/copper_weathered"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/copper_weathered_opened"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/normal_opened"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/chest/trapped_opened"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/shulker_box/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "lootr",
+        "path": "entity/shulker_box/normal_opened"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/banner_base"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/base"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/border"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/bricks"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/circle"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/creeper"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/cross"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/curly_border"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/diagonal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/diagonal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/diagonal_up_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/diagonal_up_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/flow"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/flower"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/globe"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/gradient"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/gradient_up"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/guster"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/half_horizontal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/half_horizontal_bottom"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/half_vertical"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/half_vertical_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/mojang"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/piglin"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/rhombus"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/skull"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/small_stripes"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/square_bottom_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/square_bottom_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/square_top_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/square_top_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/straight_cross"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/stripe_bottom"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/stripe_center"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/stripe_downleft"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/stripe_downright"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/stripe_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/stripe_middle"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/stripe_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/stripe_top"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/triangle_bottom"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/triangle_top"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/triangles_bottom"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/banner/triangles_top"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/black"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/blue"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/brown"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/cyan"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/gray"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/green"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/light_blue"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/light_gray"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/lime"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/magenta"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/orange"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/pink"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/purple"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/red"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/white"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/yellow"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/christmas"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/christmas_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/christmas_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_exposed"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_exposed_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_exposed_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_oxidized"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_oxidized_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_oxidized_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_weathered"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_weathered_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/copper_weathered_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/ender"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/chest/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/angler_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/archer_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/arms_up_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/blade_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/brewer_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/burn_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/danger_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/decorated_pot_base"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/decorated_pot_side"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/explorer_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/flow_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/friend_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/guster_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/heart_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/heartbreak_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/howl_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/miner_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/mourner_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/plenty_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/prize_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/scrape_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/sheaf_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/shelter_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/skull_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/decorated_pot/snort_pottery_pattern"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_black"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_blue"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_brown"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_cyan"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_gray"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_green"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_light_blue"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_light_gray"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_lime"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_magenta"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_orange"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_pink"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_purple"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_red"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_white"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/shulker_yellow"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/shulker/spark"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/acacia"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/bamboo"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/birch"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/cherry"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/crimson"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/dark_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/acacia"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/bamboo"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/birch"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/cherry"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/crimson"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/dark_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/jungle"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/mangrove"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/pale_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/spruce"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/hanging/warped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/jungle"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/mangrove"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/pale_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/rubber"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/spruce"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/signs/warped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/acacia"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/bamboo"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/birch"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/cherry"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/copper_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/crimson"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/dark_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/diamond_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/gold_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/iron_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/jungle"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_acacia"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_bamboo"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_birch"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_cherry"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_copper_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_crimson"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_dark_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_diamond_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_gold_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_iron_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_jungle"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_mangrove"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_netherite_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_packed"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_pale_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_spruce"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_tintable_accent"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_tintable_main"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_warped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/left_wood_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/mangrove"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/netherite_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/packed"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/pale_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_acacia"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_bamboo"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_birch"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_cherry"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_copper_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_crimson"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_dark_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_diamond_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_gold_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_iron_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_jungle"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_mangrove"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_netherite_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_packed"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_pale_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_spruce"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_tintable_accent"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_tintable_main"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_warped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/right_wood_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/spruce"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/tintable_accent"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/tintable_main"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/warped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/chest/wood_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/base_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/copper_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/diamond_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/gold_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/iron_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/netherite_tier"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/no_tint"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/tintable_accent"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "sophisticatedstorage",
+        "path": "entity/shulker_box/tintable_main"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/banner/tofunian"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/bed/tofubed"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/chest/tofuchest"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/chest/tofuchest_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/chest/tofuchest_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/chest/tofunian_chest"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/signs/hanging/leek"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/signs/hanging/leek_green"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/signs/hanging/sprout"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/signs/hanging/tofu_stem"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/signs/leek"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/signs/leek_green"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/signs/sprout"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "tofucraft",
+        "path": "entity/signs/tofu_stem"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/alpha_yeti"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/hydra"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/knight_phantom"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/lich"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/minoshroom"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/naga"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/quest_ram"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/snow_queen"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/banner/ur_ghast"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/single"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/canopy/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/single"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/darkwood/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/single"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mangrove/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/single"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/mining/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/single"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/sorting/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/single"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/time/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/single"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/transformation/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight/left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight/right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight/single"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight_oak/normal"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight_oak/normal_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight_oak/normal_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight_oak/trapped"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight_oak/trapped_left"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/chest/twilight_oak/trapped_right"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/canopy"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/dark"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/hanging/canopy"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/hanging/dark"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/hanging/mangrove"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/hanging/mining"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/hanging/sorting"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/hanging/time"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/hanging/transformation"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/hanging/twilight_oak"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/mangrove"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/mining"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/sorting"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/time"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/transformation"
+      }
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "twilightforest",
+        "path": "entity/signs/twilight_oak"
+      }
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "minecraft:entity/chest/normal",
+      "sprite": "sise_compat:atlas_alias/minecraft/entity/chest/normal"
+    }
+  ]
+}

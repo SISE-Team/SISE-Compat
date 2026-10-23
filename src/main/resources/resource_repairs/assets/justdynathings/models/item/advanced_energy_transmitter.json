@@ -1,0 +1,6 @@
+{
+  "parent": "justdynathings:block/advanced_energy_transmitter",
+  "textures": {
+    "missing": "#0"
+  }
+}

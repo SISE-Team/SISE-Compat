@@ -1,0 +1,3371 @@
+{
+  "version": 1,
+  "priority": [
+    "mekanism",
+    "mekmm",
+    "modern_industrialization",
+    "oritech",
+    "enderio",
+    "ltxi",
+    "neoecoae",
+    "iceandfire",
+    "cakesticklib",
+    "ic2"
+  ],
+  "scope": "same input material ratios and processing stage; native capacity exceptions retain original byproducts by user choice",
+  "patches": {
+    "ae2:blasting/silicon_from_certus_quartz_dust": {
+      "reference": "mekanism:compat/ae2/certus_quartz_dust_to_silicon",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "minecraft:blasting",
+        "category": "misc",
+        "cookingtime": 100,
+        "experience": 0.35,
+        "ingredient": "#c:dusts/certus_quartz",
+        "result": {
+          "id": "sise_ores:silicon"
+        }
+      },
+      "after": {
+        "type": "minecraft:blasting",
+        "category": "misc",
+        "cookingtime": 100,
+        "experience": 0.35,
+        "ingredient": "#c:dusts/certus_quartz",
+        "result": {
+          "id": "sise_ores:silicon",
+          "count": 2
+        }
+      }
+    },
+    "ae2:smelting/silicon_from_certus_quartz_dust": {
+      "reference": "mekanism:compat/ae2/certus_quartz_dust_to_silicon",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "cookingtime": 200,
+        "experience": 0.35,
+        "ingredient": "#c:dusts/certus_quartz",
+        "result": {
+          "id": "sise_ores:silicon"
+        }
+      },
+      "after": {
+        "type": "minecraft:smelting",
+        "category": "misc",
+        "cookingtime": 200,
+        "experience": 0.35,
+        "ingredient": "#c:dusts/certus_quartz",
+        "result": {
+          "id": "sise_ores:silicon",
+          "count": 2
+        }
+      }
+    },
+    "enderio:sag_milling/ender_pearl": {
+      "reference": "mekanism:compat/ae2/ender_pearl_to_dust",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "enderio:sag_milling",
+        "bonus": "none",
+        "energy": 2400,
+        "input": "#c:ender_pearls",
+        "outputs": [
+          {
+            "item": {
+              "count": 9,
+              "id": "sise_ores:ender_pearl_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "type": "enderio:sag_milling",
+        "bonus": "none",
+        "energy": 2400,
+        "input": "#c:ender_pearls",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:ender_pearl_dust",
+              "count": 1
+            }
+          }
+        ]
+      }
+    },
+    "ae2cs:pulverizer/flour": {
+      "reference": "cakesticklib:durability_use/flour",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "ae2cs:crystal_pulverizer_recipe_serializer",
+        "energy_cost": 8000,
+        "input": {
+          "count": 1,
+          "ingredient": "#c:crops/wheat"
+        },
+        "result": {
+          "count": 2,
+          "id": "sise_ores:flour"
+        }
+      },
+      "after": {
+        "type": "ae2cs:crystal_pulverizer_recipe_serializer",
+        "energy_cost": 8000,
+        "input": {
+          "count": 1,
+          "ingredient": "#c:crops/wheat"
+        },
+        "result": {
+          "id": "sise_ores:flour",
+          "count": 1
+        }
+      }
+    },
+    "enderio:sag_milling/quartz": {
+      "reference": "mekanism:processing/quartz/to_dust",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "enderio:sag_milling",
+        "bonus": "chance_only",
+        "energy": 2400,
+        "input": "#c:gems/quartz",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:quartz_dust"
+            }
+          },
+          {
+            "chance": 0.1,
+            "item": {
+              "id": "sise_ores:quartz_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "type": "enderio:sag_milling",
+        "bonus": "chance_only",
+        "energy": 2400,
+        "input": "#c:gems/quartz",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:quartz_dust",
+              "count": 1
+            }
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/copper/forge_hammer/ingot_to_plate": {
+      "reference": "modern_industrialization:materials/copper/compressor/main",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/copper",
+        "result": {
+          "id": "sise_ores:copper_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/copper",
+        "result": {
+          "id": "sise_ores:copper_plate",
+          "count": 2
+        }
+      }
+    },
+    "cakesticklib:durability_use/copper_dust_from_raw": {
+      "reference": "mekanism:processing/copper/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "cakesticklib:durability_use",
+        "items": [
+          "#c:raw_materials/copper"
+        ],
+        "mode": {
+          "damage": 2,
+          "tool": "cakesticklib:hammer"
+        },
+        "result": {
+          "count": 2,
+          "id": "sise_ores:copper_dust"
+        }
+      },
+      "after": {
+        "type": "cakesticklib:durability_use",
+        "items": [
+          "#c:raw_materials/copper",
+          "#c:raw_materials/copper",
+          "#c:raw_materials/copper"
+        ],
+        "mode": {
+          "damage": 6,
+          "tool": "cakesticklib:hammer"
+        },
+        "result": {
+          "id": "sise_ores:copper_dust",
+          "count": 4
+        }
+      }
+    },
+    "enderio:sag_milling/raw_copper": {
+      "reference": "mekanism:processing/copper/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:raw_materials/copper",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:copper_dust"
+            }
+          },
+          {
+            "chance": 0.8,
+            "item": {
+              "id": "sise_ores:copper_dust"
+            }
+          },
+          {
+            "chance": 0.12,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:gold_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "type": "enderio:sag_milling",
+        "energy": 7200,
+        "input": {
+          "neoforge:ingredient_type": "sise_compat:production_batch",
+          "ingredient": "#c:raw_materials/copper",
+          "count": 3
+        },
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:copper_dust",
+              "count": 4
+            }
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/copper/macerator/raw_metal": {
+      "reference": "mekanism:processing/copper/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:macerator",
+        "duration": 50,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:raw_materials/copper"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "sise_ores:copper_dust"
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:copper_dust",
+            "probability": 0.5
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:macerator",
+        "duration": 150,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "ingredient": "#c:raw_materials/copper"
+          }
+        ],
+        "item_outputs": [
+          {
+            "id": "sise_ores:copper_dust",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    "oritech:pulverizer/raw/copper": {
+      "reference": "mekanism:processing/copper/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:raw_materials/copper"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:copper_dust"
+          },
+          {
+            "count": 3,
+            "id": "sise_ores:copper_tiny_dust"
+          }
+        ],
+        "time": 100
+      },
+      "after": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          {
+            "neoforge:ingredient_type": "sise_compat:production_batch",
+            "ingredient": "#c:raw_materials/copper",
+            "count": 3
+          }
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:copper_dust",
+            "count": 4
+          }
+        ],
+        "time": 300
+      }
+    },
+    "cakesticklib:durability_use/gold_dust_from_raw": {
+      "reference": "mekanism:processing/gold/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "cakesticklib:durability_use",
+        "items": [
+          "#c:raw_materials/gold"
+        ],
+        "mode": {
+          "damage": 2,
+          "tool": "cakesticklib:hammer"
+        },
+        "result": {
+          "count": 2,
+          "id": "sise_ores:gold_dust"
+        }
+      },
+      "after": {
+        "type": "cakesticklib:durability_use",
+        "items": [
+          "#c:raw_materials/gold",
+          "#c:raw_materials/gold",
+          "#c:raw_materials/gold"
+        ],
+        "mode": {
+          "damage": 6,
+          "tool": "cakesticklib:hammer"
+        },
+        "result": {
+          "id": "sise_ores:gold_dust",
+          "count": 4
+        }
+      }
+    },
+    "enderio:sag_milling/raw_gold": {
+      "reference": "mekanism:processing/gold/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:raw_materials/gold",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:gold_dust"
+            }
+          },
+          {
+            "chance": 0.8,
+            "item": {
+              "id": "sise_ores:gold_dust"
+            }
+          },
+          {
+            "chance": 0.2,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:copper_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "type": "enderio:sag_milling",
+        "energy": 7200,
+        "input": {
+          "neoforge:ingredient_type": "sise_compat:production_batch",
+          "ingredient": "#c:raw_materials/gold",
+          "count": 3
+        },
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:gold_dust",
+              "count": 4
+            }
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/gold/macerator/raw_metal": {
+      "reference": "mekanism:processing/gold/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:macerator",
+        "duration": 50,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:raw_materials/gold"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "sise_ores:gold_dust"
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:gold_dust",
+            "probability": 0.5
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:macerator",
+        "duration": 150,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "ingredient": "#c:raw_materials/gold"
+          }
+        ],
+        "item_outputs": [
+          {
+            "id": "sise_ores:gold_dust",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    "oritech:pulverizer/raw/gold": {
+      "reference": "mekanism:processing/gold/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:raw_materials/gold"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:gold_dust"
+          },
+          {
+            "count": 3,
+            "id": "sise_ores:gold_tiny_dust"
+          }
+        ],
+        "time": 100
+      },
+      "after": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          {
+            "neoforge:ingredient_type": "sise_compat:production_batch",
+            "ingredient": "#c:raw_materials/gold",
+            "count": 3
+          }
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:gold_dust",
+            "count": 4
+          }
+        ],
+        "time": 300
+      }
+    },
+    "cakesticklib:durability_use/iron_dust_from_raw": {
+      "reference": "mekanism:processing/iron/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "cakesticklib:durability_use",
+        "items": [
+          "#c:raw_materials/iron"
+        ],
+        "mode": {
+          "damage": 2,
+          "tool": "cakesticklib:hammer"
+        },
+        "result": {
+          "count": 2,
+          "id": "sise_ores:iron_dust"
+        }
+      },
+      "after": {
+        "type": "cakesticklib:durability_use",
+        "items": [
+          "#c:raw_materials/iron",
+          "#c:raw_materials/iron",
+          "#c:raw_materials/iron"
+        ],
+        "mode": {
+          "damage": 6,
+          "tool": "cakesticklib:hammer"
+        },
+        "result": {
+          "id": "sise_ores:iron_dust",
+          "count": 4
+        }
+      }
+    },
+    "enderio:sag_milling/raw_iron": {
+      "reference": "mekanism:processing/iron/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:raw_materials/iron",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:iron_dust"
+            }
+          },
+          {
+            "chance": 0.8,
+            "item": {
+              "id": "sise_ores:iron_dust"
+            }
+          },
+          {
+            "chance": 0.05,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:tin_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "type": "enderio:sag_milling",
+        "energy": 7200,
+        "input": {
+          "neoforge:ingredient_type": "sise_compat:production_batch",
+          "ingredient": "#c:raw_materials/iron",
+          "count": 3
+        },
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:iron_dust",
+              "count": 4
+            }
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/iron/macerator/raw_metal": {
+      "reference": "mekanism:processing/iron/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:macerator",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:raw_materials/iron"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "sise_ores:iron_dust"
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:iron_dust",
+            "probability": 0.5
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:macerator",
+        "duration": 300,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "ingredient": "#c:raw_materials/iron"
+          }
+        ],
+        "item_outputs": [
+          {
+            "id": "sise_ores:iron_dust",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    "oritech:pulverizer/raw/iron": {
+      "reference": "mekanism:processing/iron/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:raw_materials/iron"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:iron_dust"
+          },
+          {
+            "count": 3,
+            "id": "sise_ores:iron_tiny_dust"
+          }
+        ],
+        "time": 100
+      },
+      "after": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          {
+            "neoforge:ingredient_type": "sise_compat:production_batch",
+            "ingredient": "#c:raw_materials/iron",
+            "count": 3
+          }
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:iron_dust",
+            "count": 4
+          }
+        ],
+        "time": 300
+      }
+    },
+    "modern_industrialization:materials/gold/forge_hammer/ingot_to_plate": {
+      "reference": "modern_industrialization:materials/gold/compressor/main",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/gold",
+        "result": {
+          "id": "sise_ores:gold_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/gold",
+        "result": {
+          "id": "sise_ores:gold_plate",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/iron/forge_hammer/ingot_to_plate": {
+      "reference": "modern_industrialization:materials/iron/compressor/main",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/iron",
+        "result": {
+          "id": "sise_ores:iron_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/iron",
+        "result": {
+          "id": "sise_ores:iron_plate",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/steel/forge_hammer/ingot_to_plate": {
+      "reference": "modern_industrialization:materials/steel/compressor/main",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#sise_ores:equivalents/ingots/steel",
+        "result": {
+          "id": "sise_ores:steel_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#sise_ores:equivalents/ingots/steel",
+        "result": {
+          "id": "sise_ores:steel_plate",
+          "count": 2
+        }
+      }
+    },
+    "enderio:sag_milling/coal": {
+      "reference": "oritech:pulverizer/coal",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#minecraft:coals",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:coal_dust"
+            }
+          },
+          {
+            "chance": 0.1,
+            "item": {
+              "id": "sise_ores:coal_dust"
+            }
+          },
+          {
+            "chance": 0.1,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:sulfur_dust"
+            },
+            "optional": true
+          }
+        ]
+      },
+      "after": {
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#minecraft:coals",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:coal_dust",
+              "count": 1
+            }
+          }
+        ]
+      }
+    },
+    "enderio:sag_milling/lead_ore": {
+      "reference": "modern_industrialization:materials/lead/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/lead"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/lead"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:ores/lead",
+        "outputs": [
+          {
+            "item": {
+              "count": 1,
+              "id": "sise_ores:raw_lead"
+            }
+          },
+          {
+            "chance": 0.33,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:raw_lead"
+            }
+          },
+          {
+            "chance": 0.15,
+            "item": {
+              "id": "minecraft:cobblestone"
+            }
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/lead"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/lead"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:ores/lead",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:raw_lead",
+              "count": 3
+            }
+          }
+        ]
+      }
+    },
+    "ic2:macerator/ores_lead_to_raw_lead": {
+      "reference": "modern_industrialization:materials/lead/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "ic2:macerator",
+        "ingredient": {
+          "tag": "forge:ores/lead"
+        },
+        "weighted": true,
+        "result": [
+          {
+            "item": "sise_ores:raw_lead",
+            "count": 2,
+            "weight": 6
+          },
+          {
+            "item": "sise_ores:raw_lead",
+            "count": 3,
+            "weight": 2
+          },
+          {
+            "item": "sise_ores:raw_lead",
+            "count": 4,
+            "weight": 2
+          }
+        ]
+      },
+      "after": {
+        "type": "ic2:macerator",
+        "ingredient": {
+          "tag": "forge:ores/lead"
+        },
+        "weighted": true,
+        "result": [
+          {
+            "item": "sise_ores:raw_lead",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "enderio:sag_milling/osmium_ore": {
+      "reference": "modern_industrialization:compat/mekanism/osmium_ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/osmium"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/osmium"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:ores/osmium",
+        "outputs": [
+          {
+            "item": {
+              "count": 1,
+              "id": "sise_ores:raw_osmium"
+            }
+          },
+          {
+            "chance": 0.33,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:raw_osmium"
+            }
+          },
+          {
+            "chance": 0.15,
+            "item": {
+              "id": "minecraft:cobblestone"
+            }
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/osmium"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/osmium"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:ores/osmium",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:raw_osmium",
+              "count": 3
+            }
+          }
+        ]
+      }
+    },
+    "neoecoae:enriching/aluminum_dust_from_raw": {
+      "reference": "enderio:sag_milling/raw_aluminum",
+      "reason": "source priority; whole per-input batch; primary-only exception",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 3,
+          "ingredient": "#c:raw_materials/aluminum"
+        },
+        "output": {
+          "count": 4,
+          "id": "sise_ores:aluminum_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 3,
+          "ingredient": "#c:raw_materials/aluminum"
+        },
+        "output": {
+          "count": 3,
+          "id": "sise_ores:aluminum_dust"
+        }
+      }
+    },
+    "enderio:sag_milling/raw_lead": {
+      "reference": "mekanism:processing/lead/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/lead"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:dusts/lead"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:raw_materials/lead",
+        "outputs": [
+          {
+            "item": {
+              "count": 1,
+              "id": "sise_ores:lead_dust"
+            }
+          },
+          {
+            "chance": 0.8,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:lead_dust"
+            }
+          },
+          {
+            "chance": 0.2,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:gold_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/lead"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:dusts/lead"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 7200,
+        "input": {
+          "neoforge:ingredient_type": "sise_compat:production_batch",
+          "ingredient": "#c:raw_materials/lead",
+          "count": 3
+        },
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:lead_dust",
+              "count": 4
+            }
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/macerator/lead_crushed_to_dust": {
+      "reference": "mekanism:processing/lead/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:macerator",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:raw_materials/lead"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "sise_ores:lead_dust"
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:raw_silver",
+            "probability": 0.5
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:lead_dust",
+            "probability": 0.5
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:macerator",
+        "duration": 300,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "ingredient": "#c:raw_materials/lead"
+          }
+        ],
+        "item_outputs": [
+          {
+            "id": "sise_ores:lead_dust",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    "enderio:sag_milling/raw_osmium": {
+      "reference": "mekanism:processing/osmium/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/osmium"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:dusts/osmium"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:raw_materials/osmium",
+        "outputs": [
+          {
+            "item": {
+              "count": 1,
+              "id": "sise_ores:osmium_dust"
+            }
+          },
+          {
+            "chance": 0.8,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:osmium_dust"
+            }
+          },
+          {
+            "chance": 0.2,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:iron_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/osmium"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:dusts/osmium"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 7200,
+        "input": {
+          "neoforge:ingredient_type": "sise_compat:production_batch",
+          "ingredient": "#c:raw_materials/osmium",
+          "count": 3
+        },
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:osmium_dust",
+              "count": 4
+            }
+          }
+        ]
+      }
+    },
+    "modern_industrialization:compat/mekanism/raw_osmium_to_dust": {
+      "reference": "mekanism:processing/osmium/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "modern_industrialization:macerator",
+        "duration": 50,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:raw_materials/osmium"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "sise_ores:osmium_dust"
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:osmium_dust",
+            "probability": 0.5
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "modern_industrialization:macerator",
+        "duration": 150,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "ingredient": "#c:raw_materials/osmium"
+          }
+        ],
+        "item_outputs": [
+          {
+            "id": "sise_ores:osmium_dust",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    "enderio:sag_milling/raw_tin": {
+      "reference": "mekanism:processing/tin/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/tin"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:dusts/tin"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:raw_materials/tin",
+        "outputs": [
+          {
+            "item": {
+              "count": 1,
+              "id": "sise_ores:tin_dust"
+            }
+          },
+          {
+            "chance": 0.8,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:tin_dust"
+            }
+          },
+          {
+            "chance": 0.2,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:copper_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/tin"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:dusts/tin"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 7200,
+        "input": {
+          "neoforge:ingredient_type": "sise_compat:production_batch",
+          "ingredient": "#c:raw_materials/tin",
+          "count": 3
+        },
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:tin_dust",
+              "count": 4
+            }
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/tin/macerator/raw_metal": {
+      "reference": "mekanism:processing/tin/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:macerator",
+        "duration": 50,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:raw_materials/tin"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "sise_ores:tin_dust"
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:tin_dust",
+            "probability": 0.5
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:macerator",
+        "duration": 150,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "ingredient": "#c:raw_materials/tin"
+          }
+        ],
+        "item_outputs": [
+          {
+            "id": "sise_ores:tin_dust",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    "enderio:sag_milling/raw_uranium": {
+      "reference": "mekanism:processing/uranium/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/uranium"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:dusts/uranium"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:raw_materials/uranium",
+        "outputs": [
+          {
+            "item": {
+              "count": 1,
+              "id": "sise_ores:uranium_dust"
+            }
+          },
+          {
+            "chance": 0.8,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:uranium_dust"
+            }
+          },
+          {
+            "chance": 0.2,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:lead_dust"
+            }
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/uranium"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:dusts/uranium"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 7200,
+        "input": {
+          "neoforge:ingredient_type": "sise_compat:production_batch",
+          "ingredient": "#c:raw_materials/uranium",
+          "count": 3
+        },
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:uranium_dust",
+              "count": 4
+            }
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/uranium/macerator/raw_metal": {
+      "reference": "mekanism:processing/uranium/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:macerator",
+        "duration": 100,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:raw_materials/uranium"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "sise_ores:uranium_dust"
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:uranium_dust",
+            "probability": 0.5
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:macerator",
+        "duration": 300,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "ingredient": "#c:raw_materials/uranium"
+          }
+        ],
+        "item_outputs": [
+          {
+            "id": "sise_ores:uranium_dust",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    "oritech:pulverizer/uranium": {
+      "reference": "mekanism:processing/uranium/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:raw_materials/uranium"
+        ],
+        "itemResults": [
+          {
+            "count": 2,
+            "id": "sise_ores:uranium_dust"
+          }
+        ],
+        "time": 100
+      },
+      "after": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          {
+            "neoforge:ingredient_type": "sise_compat:production_batch",
+            "ingredient": "#c:raw_materials/uranium",
+            "count": 3
+          }
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:uranium_dust",
+            "count": 4
+          }
+        ],
+        "time": 300
+      }
+    },
+    "enderio:sag_milling/sand": {
+      "reference": "mekanism:compat/ae2/sand_to_silicon",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:sands",
+        "outputs": [
+          {
+            "chance": 0.5,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:silicon"
+            }
+          }
+        ]
+      },
+      "after": {
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:sands",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:silicon",
+              "count": 1
+            }
+          }
+        ]
+      }
+    },
+    "enderio:sag_milling/tin_ore": {
+      "reference": "modern_industrialization:materials/tin/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/tin"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/tin"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:ores/tin",
+        "outputs": [
+          {
+            "item": {
+              "count": 1,
+              "id": "sise_ores:raw_tin"
+            }
+          },
+          {
+            "chance": 0.33,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:raw_tin"
+            }
+          },
+          {
+            "chance": 0.15,
+            "item": {
+              "id": "minecraft:cobblestone"
+            }
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/tin"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/tin"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:ores/tin",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:raw_tin",
+              "count": 3
+            }
+          }
+        ]
+      }
+    },
+    "ic2:macerator/ores_tin_to_raw_tin": {
+      "reference": "modern_industrialization:materials/tin/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "ic2:macerator",
+        "ingredient": {
+          "tag": "forge:ores/tin"
+        },
+        "weighted": true,
+        "result": [
+          {
+            "item": "sise_ores:raw_tin",
+            "count": 2,
+            "weight": 6
+          },
+          {
+            "item": "sise_ores:raw_tin",
+            "count": 3,
+            "weight": 2
+          },
+          {
+            "item": "sise_ores:raw_tin",
+            "count": 4,
+            "weight": 2
+          }
+        ]
+      },
+      "after": {
+        "type": "ic2:macerator",
+        "ingredient": {
+          "tag": "forge:ores/tin"
+        },
+        "weighted": true,
+        "result": [
+          {
+            "item": "sise_ores:raw_tin",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/tin/forge_hammer/ore_to_raw_metal": {
+      "reference": "modern_industrialization:materials/tin/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "#c:ores/tin",
+        "result": {
+          "count": 2,
+          "id": "sise_ores:raw_tin"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "#c:ores/tin",
+        "result": {
+          "id": "sise_ores:raw_tin",
+          "count": 3
+        }
+      }
+    },
+    "enderio:sag_milling/uranium_ore": {
+      "reference": "modern_industrialization:materials/uranium/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/uranium"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/uranium"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:ores/uranium",
+        "outputs": [
+          {
+            "item": {
+              "count": 1,
+              "id": "sise_ores:raw_uranium"
+            }
+          },
+          {
+            "chance": 0.33,
+            "item": {
+              "count": 1,
+              "id": "sise_ores:raw_uranium"
+            }
+          },
+          {
+            "chance": 0.15,
+            "item": {
+              "id": "minecraft:cobblestone"
+            }
+          }
+        ]
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:ores/uranium"
+            }
+          },
+          {
+            "type": "neoforge:not",
+            "value": {
+              "type": "neoforge:tag_empty",
+              "tag": "c:raw_materials/uranium"
+            }
+          }
+        ],
+        "type": "enderio:sag_milling",
+        "energy": 2400,
+        "input": "#c:ores/uranium",
+        "outputs": [
+          {
+            "item": {
+              "id": "sise_ores:raw_uranium",
+              "count": 3
+            }
+          }
+        ]
+      }
+    },
+    "ic2:macerator/ores_uranium_to_raw_uranium": {
+      "reference": "modern_industrialization:materials/uranium/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "ic2:macerator",
+        "ingredient": {
+          "tag": "forge:ores/uranium"
+        },
+        "weighted": true,
+        "result": [
+          {
+            "item": "sise_ores:raw_uranium",
+            "count": 2,
+            "weight": 6
+          },
+          {
+            "item": "sise_ores:raw_uranium",
+            "count": 3,
+            "weight": 2
+          },
+          {
+            "item": "sise_ores:raw_uranium",
+            "count": 4,
+            "weight": 2
+          }
+        ]
+      },
+      "after": {
+        "type": "ic2:macerator",
+        "ingredient": {
+          "tag": "forge:ores/uranium"
+        },
+        "weighted": true,
+        "result": [
+          {
+            "item": "sise_ores:raw_uranium",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "ic2:macerator/obsidian_to_obsidian_dust": {
+      "reference": "mekanism:crushing/obsidian_to_dust",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "ic2:macerator",
+        "ingredient": {
+          "item": "minecraft:obsidian"
+        },
+        "result": {
+          "item": "sise_ores:obsidian_dust"
+        }
+      },
+      "after": {
+        "type": "ic2:macerator",
+        "ingredient": {
+          "item": "minecraft:obsidian"
+        },
+        "result": [
+          {
+            "item": "sise_ores:obsidian_dust",
+            "count": 4
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/bronze/forge_hammer/ingot_to_plate": {
+      "reference": "modern_industrialization:materials/bronze/compressor/main",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/bronze",
+        "result": {
+          "id": "sise_ores:bronze_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/bronze",
+        "result": {
+          "id": "sise_ores:bronze_plate",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/tin/forge_hammer/ingot_to_plate": {
+      "reference": "modern_industrialization:materials/tin/compressor/main",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/tin",
+        "result": {
+          "id": "sise_ores:tin_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/tin",
+        "result": {
+          "id": "sise_ores:tin_plate",
+          "count": 2
+        }
+      }
+    },
+    "ltxi:arc_smelting/silicon_ingot": {
+      "reference": "modern_industrialization:materials/silicon/smelting/dust_to_ingot_blasting",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "ltxi:arc_smelting",
+        "craft_time": 600,
+        "item_inputs": [
+          {
+            "count": 2,
+            "ingredient": "#c:dusts/silicon"
+          }
+        ],
+        "item_results": [
+          {
+            "count": 1,
+            "id": "sise_ores:silicon_ingot"
+          }
+        ],
+        "mode": "ltxi:unshielded_smelting"
+      },
+      "after": {
+        "type": "ltxi:arc_smelting",
+        "craft_time": 600,
+        "item_inputs": [
+          {
+            "count": 2,
+            "ingredient": "#c:dusts/silicon"
+          }
+        ],
+        "item_results": [
+          {
+            "id": "sise_ores:silicon_ingot",
+            "count": 2
+          }
+        ],
+        "mode": "ltxi:unshielded_smelting"
+      }
+    },
+    "ltxi:chemical_reacting/hydrochloric_acid": {
+      "reference": "modern_industrialization:materials/chemical_reactor/hydrochloric_acid",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "ltxi:chemical_reacting",
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "#c:hydrogen"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:chlorine"
+          }
+        ],
+        "fluid_results": [
+          {
+            "amount": 1000,
+            "id": "sise_ores:hydrochloric_acid"
+          }
+        ]
+      },
+      "after": {
+        "type": "ltxi:chemical_reacting",
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "#c:hydrogen"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:chlorine"
+          }
+        ],
+        "fluid_results": [
+          {
+            "id": "sise_ores:hydrochloric_acid",
+            "amount": 2000
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/forge_hammer/copper_ore_to_dust_with_tool": {
+      "reference": "mekanism:processing/copper/dust/from_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 60,
+        "ingredient": "#c:ores/copper",
+        "result": {
+          "count": 12,
+          "id": "sise_ores:copper_dust"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 60,
+        "ingredient": "#c:ores/copper",
+        "result": {
+          "id": "sise_ores:copper_dust",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/gold/forge_hammer/ore_to_dust_with_tool": {
+      "reference": "mekanism:processing/gold/dust/from_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 50,
+        "ingredient": "#c:ores/gold",
+        "result": {
+          "count": 4,
+          "id": "sise_ores:gold_dust"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 50,
+        "ingredient": "#c:ores/gold",
+        "result": {
+          "id": "sise_ores:gold_dust",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/iron/forge_hammer/ore_to_dust_with_tool": {
+      "reference": "mekanism:processing/iron/dust/from_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 50,
+        "ingredient": "#c:ores/iron",
+        "result": {
+          "count": 4,
+          "id": "sise_ores:iron_dust"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 50,
+        "ingredient": "#c:ores/iron",
+        "result": {
+          "id": "sise_ores:iron_dust",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/tin/forge_hammer/ore_to_dust_with_tool": {
+      "reference": "mekanism:processing/tin/dust/from_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 50,
+        "ingredient": "#c:ores/tin",
+        "result": {
+          "count": 4,
+          "id": "sise_ores:tin_dust"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 50,
+        "ingredient": "#c:ores/tin",
+        "result": {
+          "id": "sise_ores:tin_dust",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/electrolyzer/water": {
+      "reference": "mekanism:separator/water",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:electrolyzer",
+        "duration": 600,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 3000,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 2000,
+            "id": "sise_ores:hydrogen"
+          },
+          {
+            "amount": 1000,
+            "id": "sise_ores:oxygen"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:electrolyzer",
+        "duration": 600,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 3000,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "id": "sise_ores:hydrogen",
+            "amount": 3000
+          },
+          {
+            "id": "sise_ores:oxygen",
+            "amount": 1500
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/silver/macerator/raw_metal": {
+      "reference": "mekmm:processing/silver/dust/from_raw_ore",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:macerator",
+        "duration": 50,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:raw_materials/silver"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "sise_ores:silver_dust"
+          },
+          {
+            "amount": 1,
+            "id": "sise_ores:silver_dust",
+            "probability": 0.5
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:macerator",
+        "duration": 150,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 3,
+            "ingredient": "#c:raw_materials/silver"
+          }
+        ],
+        "item_outputs": [
+          {
+            "id": "sise_ores:silver_dust",
+            "amount": 4
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/bronze_dust": {
+      "reference": "modern_industrialization:alloy/mixer/bronze/dust",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "#c:dusts/copper",
+          "#c:dusts/copper",
+          "#c:dusts/copper",
+          "#c:dusts/tin"
+        ],
+        "result": {
+          "count": 3,
+          "id": "sise_ores:bronze_dust"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "#c:dusts/copper",
+          "#c:dusts/copper",
+          "#c:dusts/copper",
+          "#c:dusts/tin"
+        ],
+        "result": {
+          "id": "sise_ores:bronze_dust",
+          "count": 4
+        }
+      }
+    },
+    "modern_industrialization:materials/bronze_tiny_dust": {
+      "reference": "modern_industrialization:alloy/mixer/bronze/tiny_dust",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "#c:tiny_dusts/copper",
+          "#c:tiny_dusts/copper",
+          "#c:tiny_dusts/copper",
+          "#c:tiny_dusts/tin"
+        ],
+        "result": {
+          "count": 3,
+          "id": "sise_ores:bronze_tiny_dust"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "#c:tiny_dusts/copper",
+          "#c:tiny_dusts/copper",
+          "#c:tiny_dusts/copper",
+          "#c:tiny_dusts/tin"
+        ],
+        "result": {
+          "id": "sise_ores:bronze_tiny_dust",
+          "count": 4
+        }
+      }
+    },
+    "modern_industrialization:materials/bronze/forge_hammer/double_ingot_to_plate": {
+      "reference": "modern_industrialization:materials/bronze/compressor/double_ingot",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:bronze_double_ingot",
+        "result": {
+          "id": "sise_ores:bronze_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:bronze_double_ingot",
+        "result": {
+          "id": "sise_ores:bronze_plate",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/coal/forge_hammer/crushed_dust_to_dust_with_tool": {
+      "reference": "modern_industrialization:materials/coal/macerator/crushed_dust",
+      "reason": "source priority; whole per-input batch; primary-only exception",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 3,
+        "damage": 30,
+        "ingredient": "modern_industrialization:coal_crushed_dust",
+        "result": {
+          "count": 4,
+          "id": "sise_ores:coal_dust"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 3,
+        "damage": 30,
+        "ingredient": "modern_industrialization:coal_crushed_dust",
+        "result": {
+          "count": 3,
+          "id": "sise_ores:coal_dust"
+        }
+      }
+    },
+    "modern_industrialization:materials/copper/forge_hammer/double_ingot_to_plate": {
+      "reference": "modern_industrialization:materials/copper/compressor/double_ingot",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:copper_double_ingot",
+        "result": {
+          "id": "sise_ores:copper_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:copper_double_ingot",
+        "result": {
+          "id": "sise_ores:copper_plate",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/gold/forge_hammer/double_ingot_to_plate": {
+      "reference": "modern_industrialization:materials/gold/compressor/double_ingot",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:gold_double_ingot",
+        "result": {
+          "id": "sise_ores:gold_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:gold_double_ingot",
+        "result": {
+          "id": "sise_ores:gold_plate",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/iron/forge_hammer/double_ingot_to_plate": {
+      "reference": "modern_industrialization:materials/iron/compressor/double_ingot",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:iron_double_ingot",
+        "result": {
+          "id": "sise_ores:iron_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:iron_double_ingot",
+        "result": {
+          "id": "sise_ores:iron_plate",
+          "count": 2
+        }
+      }
+    },
+    "oritech:pulverizer/ore/nickel": {
+      "reference": "modern_industrialization:materials/nickel/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:ores/nickel"
+        ],
+        "itemResults": [
+          {
+            "count": 2,
+            "id": "sise_ores:raw_nickel"
+          }
+        ],
+        "time": 100
+      },
+      "after": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:ores/nickel"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:raw_nickel",
+            "count": 3
+          }
+        ],
+        "time": 100
+      }
+    },
+    "oritech:pulverizer/raw/nickel": {
+      "reference": "modern_industrialization:materials/nickel/macerator/raw_metal",
+      "reason": "source priority; whole per-input batch; primary-only exception",
+      "before": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:raw_materials/nickel"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:nickel_dust"
+          },
+          {
+            "count": 3,
+            "id": "sise_ores:nickel_tiny_dust"
+          }
+        ],
+        "time": 100
+      },
+      "after": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:raw_materials/nickel"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:nickel_dust",
+            "count": 1
+          },
+          {
+            "count": 3,
+            "id": "sise_ores:nickel_tiny_dust"
+          }
+        ],
+        "time": 100
+      }
+    },
+    "oritech:pulverizer/ore/platinum": {
+      "reference": "modern_industrialization:materials/platinum/macerator/ore_to_raw",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:ores/platinum"
+        ],
+        "itemResults": [
+          {
+            "count": 2,
+            "id": "sise_ores:raw_platinum"
+          }
+        ],
+        "time": 150
+      },
+      "after": {
+        "type": "oritech:pulverizer",
+        "itemInputs": [
+          "#c:ores/platinum"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:raw_platinum",
+            "count": 3
+          }
+        ],
+        "time": 150
+      }
+    },
+    "modern_industrialization:materials/steel/forge_hammer/double_ingot_to_plate": {
+      "reference": "modern_industrialization:materials/steel/compressor/double_ingot",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:steel_double_ingot",
+        "result": {
+          "id": "sise_ores:steel_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:steel_double_ingot",
+        "result": {
+          "id": "sise_ores:steel_plate",
+          "count": 2
+        }
+      }
+    },
+    "modern_industrialization:materials/tin/forge_hammer/double_ingot_to_plate": {
+      "reference": "modern_industrialization:materials/tin/compressor/double_ingot",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:tin_double_ingot",
+        "result": {
+          "id": "sise_ores:tin_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "ingredient": "modern_industrialization:tin_double_ingot",
+        "result": {
+          "id": "sise_ores:tin_plate",
+          "count": 2
+        }
+      }
+    },
+    "neoecoae:enriching/tungsten_dust_from_raw": {
+      "reference": "modern_industrialization:materials/tungsten/macerator/raw_metal",
+      "reason": "source priority; whole per-input batch; primary-only exception",
+      "before": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 3,
+          "ingredient": "#c:raw_materials/tungsten"
+        },
+        "output": {
+          "count": 4,
+          "id": "sise_ores:tungsten_dust"
+        }
+      },
+      "after": {
+        "neoforge:conditions": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mekanism"
+          }
+        ],
+        "type": "mekanism:enriching",
+        "input": {
+          "count": 3,
+          "ingredient": "#c:raw_materials/tungsten"
+        },
+        "output": {
+          "count": 3,
+          "id": "sise_ores:tungsten_dust"
+        }
+      }
+    },
+    "oritech:foundry/alloy/gem/copper": {
+      "reference": "oritech:copper_ingot_from_blasting_copper_gem",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:foundry",
+        "itemInputs": [
+          "oritech:copper_gem",
+          "oritech:copper_gem"
+        ],
+        "itemResults": [
+          {
+            "count": 3,
+            "id": "minecraft:copper_ingot"
+          }
+        ],
+        "time": 80
+      },
+      "after": {
+        "type": "oritech:foundry",
+        "itemInputs": [
+          "oritech:copper_gem",
+          "oritech:copper_gem"
+        ],
+        "itemResults": [
+          {
+            "id": "minecraft:copper_ingot",
+            "count": 2
+          }
+        ],
+        "time": 80
+      }
+    },
+    "oritech:electrum_ingot": {
+      "reference": "oritech:foundry/alloy/electrum",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "a": "#c:ingots/gold",
+          "b": "#c:dusts/redstone"
+        },
+        "pattern": [
+          "aa ",
+          "bb "
+        ],
+        "result": {
+          "id": "sise_ores:electrum_ingot"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "a": "#c:ingots/gold",
+          "b": "#c:dusts/redstone"
+        },
+        "pattern": [
+          "aa ",
+          "bb "
+        ],
+        "result": {
+          "id": "sise_ores:electrum_ingot",
+          "count": 2
+        }
+      }
+    },
+    "oritech:foundry/alloy/gem/nickel": {
+      "reference": "oritech:nickel_ingot_from_blasting_nickel_gem",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:foundry",
+        "itemInputs": [
+          "oritech:nickel_gem",
+          "oritech:nickel_gem"
+        ],
+        "itemResults": [
+          {
+            "count": 3,
+            "id": "sise_ores:nickel_ingot"
+          }
+        ],
+        "time": 80
+      },
+      "after": {
+        "type": "oritech:foundry",
+        "itemInputs": [
+          "oritech:nickel_gem",
+          "oritech:nickel_gem"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:nickel_ingot",
+            "count": 2
+          }
+        ],
+        "time": 80
+      }
+    },
+    "oritech:foundry/alloy/gem/platinum": {
+      "reference": "oritech:platinum_ingot_from_blasting_platinum_gem",
+      "reason": "source priority; complete product vector and per-input yield",
+      "before": {
+        "type": "oritech:foundry",
+        "itemInputs": [
+          "oritech:platinum_gem",
+          "oritech:platinum_gem"
+        ],
+        "itemResults": [
+          {
+            "count": 3,
+            "id": "sise_ores:platinum_ingot"
+          }
+        ],
+        "time": 80
+      },
+      "after": {
+        "type": "oritech:foundry",
+        "itemInputs": [
+          "oritech:platinum_gem",
+          "oritech:platinum_gem"
+        ],
+        "itemResults": [
+          {
+            "id": "sise_ores:platinum_ingot",
+            "count": 2
+          }
+        ],
+        "time": 80
+      }
+    },
+    "modern_industrialization:heat_exchanger/heavy_water_steam_with_water": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 16000,
+            "ingredient": "modern_industrialization:heavy_water_steam"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "sise_ores:heavy_water"
+          },
+          {
+            "amount": 16000,
+            "id": "sise_ores:steam"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 16000,
+            "ingredient": "modern_industrialization:heavy_water_steam"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "sise_ores:heavy_water"
+          },
+          {
+            "amount": 1000,
+            "id": "sise_ores:steam"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:heat_exchanger/high_pressure_heavy_water_steam_with_water": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 2000,
+            "ingredient": "modern_industrialization:high_pressure_heavy_water_steam"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 125,
+            "id": "modern_industrialization:high_pressure_heavy_water"
+          },
+          {
+            "amount": 16000,
+            "id": "sise_ores:steam"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 2000,
+            "ingredient": "modern_industrialization:high_pressure_heavy_water_steam"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 125,
+            "id": "modern_industrialization:high_pressure_heavy_water"
+          },
+          {
+            "amount": 1000,
+            "id": "sise_ores:steam"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:heat_exchanger/high_pressure_steam_with_water": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 2000,
+            "ingredient": "modern_industrialization:high_pressure_steam"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 125,
+            "id": "modern_industrialization:high_pressure_water"
+          },
+          {
+            "amount": 16000,
+            "id": "sise_ores:steam"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 2000,
+            "ingredient": "modern_industrialization:high_pressure_steam"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 125,
+            "id": "modern_industrialization:high_pressure_water"
+          },
+          {
+            "amount": 1000,
+            "id": "sise_ores:steam"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:heat_exchanger/steam_with_heavy_water": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 16000,
+            "ingredient": "sise_ores:steam"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:heavy_water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "minecraft:water"
+          },
+          {
+            "amount": 16000,
+            "id": "modern_industrialization:heavy_water_steam"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:steam"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:heavy_water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "minecraft:water"
+          },
+          {
+            "amount": 16000,
+            "id": "modern_industrialization:heavy_water_steam"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:heat_exchanger/steam_with_high_pressure_heavy_water": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 16000,
+            "ingredient": "sise_ores:steam"
+          },
+          {
+            "amount": 125,
+            "ingredient": "modern_industrialization:high_pressure_heavy_water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "minecraft:water"
+          },
+          {
+            "amount": 2000,
+            "id": "modern_industrialization:high_pressure_heavy_water_steam"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:steam"
+          },
+          {
+            "amount": 125,
+            "ingredient": "modern_industrialization:high_pressure_heavy_water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "minecraft:water"
+          },
+          {
+            "amount": 2000,
+            "id": "modern_industrialization:high_pressure_heavy_water_steam"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:heat_exchanger/steam_with_high_pressure_water": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 16000,
+            "ingredient": "sise_ores:steam"
+          },
+          {
+            "amount": 125,
+            "ingredient": "modern_industrialization:high_pressure_water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "minecraft:water"
+          },
+          {
+            "amount": 2000,
+            "id": "modern_industrialization:high_pressure_steam"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 300,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:steam"
+          },
+          {
+            "amount": 125,
+            "ingredient": "modern_industrialization:high_pressure_water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "minecraft:water"
+          },
+          {
+            "amount": 2000,
+            "id": "modern_industrialization:high_pressure_steam"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/heat_exchanger/lava": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 400,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 10,
+            "ingredient": "minecraft:lava"
+          },
+          {
+            "amount": 500,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 8000,
+            "id": "sise_ores:steam"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "minecraft:obsidian",
+            "probability": 0.01
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:heat_exchanger",
+        "duration": 400,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 10,
+            "ingredient": "minecraft:lava"
+          },
+          {
+            "amount": 500,
+            "ingredient": "minecraft:water"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 500,
+            "id": "sise_ores:steam"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "minecraft:obsidian",
+            "probability": 0.01
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/pressurizer/down/steam": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:pressurizer",
+        "duration": 100,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 125,
+            "ingredient": "modern_industrialization:high_pressure_steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "sise_ores:steam"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:pressurizer",
+        "duration": 200,
+        "eu": 2,
+        "fluid_inputs": [
+          {
+            "amount": 250,
+            "ingredient": "modern_industrialization:high_pressure_steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 125,
+            "id": "sise_ores:steam"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:materials/pressurizer/up/steam": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:pressurizer",
+        "duration": 75,
+        "eu": 64,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 125,
+            "id": "modern_industrialization:high_pressure_steam"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:pressurizer",
+        "duration": 150,
+        "eu": 64,
+        "fluid_inputs": [
+          {
+            "amount": 125,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 250,
+            "id": "modern_industrialization:high_pressure_steam"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:oil/chemical_reactor/ethylbenzene_to_styrene": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 240,
+        "eu": 20,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "modern_industrialization:ethylbenzene"
+          },
+          {
+            "amount": 2000,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "modern_industrialization:styrene"
+          },
+          {
+            "amount": 500,
+            "id": "sise_ores:hydrogen"
+          }
+        ],
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:dusts/iron"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 240,
+        "eu": 20,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "modern_industrialization:ethylbenzene"
+          },
+          {
+            "amount": 125,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "modern_industrialization:styrene"
+          },
+          {
+            "amount": 500,
+            "id": "sise_ores:hydrogen"
+          }
+        ],
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:dusts/iron"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:oil/chemical_reactor/raw_biodiesel_to_biodiesel": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 200,
+        "eu": 16,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "modern_industrialization:raw_biodiesel"
+          },
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 700,
+            "id": "sise_ores:biofuel"
+          },
+          {
+            "amount": 250,
+            "id": "sise_ores:ethanol"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 400,
+        "eu": 16,
+        "fluid_inputs": [
+          {
+            "amount": 2000,
+            "ingredient": "modern_industrialization:raw_biodiesel"
+          },
+          {
+            "amount": 125,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1400,
+            "id": "sise_ores:biofuel"
+          },
+          {
+            "amount": 500,
+            "id": "sise_ores:ethanol"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:petrochem/steam_cracking/heavy_fuel": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 100,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "modern_industrialization:heavy_fuel"
+          },
+          {
+            "amount": 100,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "modern_industrialization:steam_cracked_heavy_fuel"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 400,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 4000,
+            "ingredient": "modern_industrialization:heavy_fuel"
+          },
+          {
+            "amount": 25,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 4000,
+            "id": "modern_industrialization:steam_cracked_heavy_fuel"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:petrochem/steam_cracking/light_fuel": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 100,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "modern_industrialization:light_fuel"
+          },
+          {
+            "amount": 100,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "modern_industrialization:steam_cracked_light_fuel"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 400,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 4000,
+            "ingredient": "modern_industrialization:light_fuel"
+          },
+          {
+            "amount": 25,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 4000,
+            "id": "modern_industrialization:steam_cracked_light_fuel"
+          }
+        ]
+      }
+    },
+    "modern_industrialization:petrochem/steam_cracking/naphtha": {
+      "reference": "mekanism:boiler/one_water_to_one_steam",
+      "reason": "ordinary steam water-equivalent unit, applied to both production and consumption; preserve other batch inputs and outputs",
+      "before": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 100,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 1000,
+            "ingredient": "sise_ores:naphtha"
+          },
+          {
+            "amount": 100,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 1000,
+            "id": "modern_industrialization:steam_cracked_naphtha"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:chemical_reactor",
+        "duration": 400,
+        "eu": 8,
+        "fluid_inputs": [
+          {
+            "amount": 4000,
+            "ingredient": "sise_ores:naphtha"
+          },
+          {
+            "amount": 25,
+            "ingredient": "sise_ores:steam"
+          }
+        ],
+        "fluid_outputs": [
+          {
+            "amount": 4000,
+            "id": "modern_industrialization:steam_cracked_naphtha"
+          }
+        ]
+      }
+    }
+  },
+  "primary_only_exceptions": {
+    "neoecoae:enriching/aluminum_dust_from_raw": {
+      "reference": "enderio:sag_milling/raw_aluminum",
+      "reason": "Native output capacity/probability format cannot carry all reference byproducts; user chose to retain the route and unify its primary ratio."
+    },
+    "modern_industrialization:materials/coal/forge_hammer/crushed_dust_to_dust_with_tool": {
+      "reference": "modern_industrialization:materials/coal/macerator/crushed_dust",
+      "reason": "Native output capacity/probability format cannot carry all reference byproducts; user chose to retain the route and unify its primary ratio."
+    },
+    "oritech:pulverizer/raw/nickel": {
+      "reference": "modern_industrialization:materials/nickel/macerator/raw_metal",
+      "reason": "Native output capacity/probability format cannot carry all reference byproducts; user chose to retain the route and unify its primary ratio."
+    },
+    "neoecoae:enriching/tungsten_dust_from_raw": {
+      "reference": "modern_industrialization:materials/tungsten/macerator/raw_metal",
+      "reason": "Native output capacity/probability format cannot carry all reference byproducts; user chose to retain the route and unify its primary ratio."
+    }
+  },
+  "steam_unit_recipes": [
+    "modern_industrialization:heat_exchanger/heavy_water_steam_with_water",
+    "modern_industrialization:heat_exchanger/high_pressure_heavy_water_steam_with_water",
+    "modern_industrialization:heat_exchanger/high_pressure_steam_with_water",
+    "modern_industrialization:heat_exchanger/steam_with_heavy_water",
+    "modern_industrialization:heat_exchanger/steam_with_high_pressure_heavy_water",
+    "modern_industrialization:heat_exchanger/steam_with_high_pressure_water",
+    "modern_industrialization:materials/heat_exchanger/lava",
+    "modern_industrialization:materials/pressurizer/down/steam",
+    "modern_industrialization:materials/pressurizer/up/steam",
+    "modern_industrialization:oil/chemical_reactor/ethylbenzene_to_styrene",
+    "modern_industrialization:oil/chemical_reactor/raw_biodiesel_to_biodiesel",
+    "modern_industrialization:petrochem/steam_cracking/heavy_fuel",
+    "modern_industrialization:petrochem/steam_cracking/light_fuel",
+    "modern_industrialization:petrochem/steam_cracking/naphtha"
+  ]
+}

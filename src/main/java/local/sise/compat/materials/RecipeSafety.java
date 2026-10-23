@@ -27,10 +27,11 @@ public final class RecipeSafety {
         "oritech:crafting/small_copper_dust_from_unpacking",
         "oritech:crafting/small_nickel_dust_from_unpacking",
         "oritech:crafting/small_platinum_dust_from_unpacking",
-        "oritech:uranium_dustblockinv", "oritech:plutonium_dustblockinv");
+        "oritech:uranium_dustblockinv", "oritech:plutonium_dustblockinv",
+        "modern_industrialization:materials/sulfur/craft/tiny_dust_from_dust");
 
     public static boolean manualOnly(String id) {
-        return id.startsWith("sise_ores:convert/") || DUST_SPLITS.contains(id);
+        return id.startsWith("sise_ores:convert/");
     }
 
     public static String resolve(String id, JsonObject recipe) {
@@ -50,23 +51,33 @@ public final class RecipeSafety {
                 return "silicon ingot unpacking excludes ordinary silicon blocks";
             }
         }
-        if (DUST_SPLITS.contains(id) && recipe.get("type").getAsString().equals("minecraft:crafting_shapeless")
+        // Unified 1/9 powders now share one result; the seven Oritech splits can stay on the workbench.
+        // Sulfur alone also has a single-powder dye recipe, so the reusable IC2 hammer selects subdivision.
+        if (id.equals("modern_industrialization:materials/sulfur/craft/tiny_dust_from_dust")
+                && recipe.get("type").getAsString().equals("minecraft:crafting_shapeless")
                 && recipe.getAsJsonArray("ingredients").size() == 1) {
-            var ingredient = recipe.remove("ingredients").getAsJsonArray().get(0);
+            recipe.getAsJsonArray("ingredients").add("ic2:forge_hammer");
             recipe.remove("category");
-            recipe.addProperty("type", "minecraft:stonecutting");
-            recipe.add("ingredient", ingredient);
-            return "selectable dust subdivision; original output/count retained";
+            recipe.addProperty("type", "ic2:shapeless");
+            recipe.addProperty("consuming", false);
+            var result = recipe.getAsJsonObject("result");
+            if (result.has("id")) result.add("item", result.remove("id"));
+            return "workbench sulfur subdivision with reusable hammer; original 1:9 yield retained";
         }
-        if (Set.of("mekanism:storage_blocks/steel", "modern_industrialization:materials/steel/craft/block_from_ingot", "oritech:steelblock").contains(id)
-                && recipe.get("type").getAsString().equals("minecraft:crafting_shaped")
+        if (Set.of("mekanism:storage_blocks/steel", "modern_industrialization:materials/steel/craft/block_from_ingot", "oritech:steelblock", "ic2:shaped/steel_block").contains(id)
+                && Set.of("minecraft:crafting_shaped", "ic2:shaped").contains(recipe.get("type").getAsString())
                 && recipe.has("result") && recipe.get("result").isJsonObject()
-                && recipe.getAsJsonObject("result").has("id")
-                && recipe.getAsJsonObject("result").get("id").getAsString().equals("sise_ores:steel_block")) {
+                && ((recipe.getAsJsonObject("result").has("id") && recipe.getAsJsonObject("result").get("id").getAsString().equals("sise_ores:steel_block"))
+                    || (recipe.getAsJsonObject("result").has("item") && recipe.getAsJsonObject("result").get("item").isJsonPrimitive()
+                        && recipe.getAsJsonObject("result").get("item").getAsString().equals("sise_ores:steel_block")))) {
             boolean changed = false;
             for (var entry : recipe.getAsJsonObject("key").entrySet()) {
                 if (entry.getValue().equals(new JsonPrimitive("#c:ingots/steel"))) {
                     entry.setValue(new JsonPrimitive("#sise_ores:equivalents/ingots/steel"));
+                    changed = true;
+                } else if (entry.getValue().isJsonObject() && entry.getValue().getAsJsonObject().has("tag")
+                        && Set.of("forge:ingots/steel", "c:ingots/steel").contains(entry.getValue().getAsJsonObject().get("tag").getAsString())) {
+                    entry.getValue().getAsJsonObject().addProperty("tag", "sise_ores:equivalents/ingots/steel");
                     changed = true;
                 }
             }

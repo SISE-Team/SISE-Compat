@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "enderio:block/machine_side",
+    "down": "enderio:block/machine_bottom",
+    "up": "enderio:block/machine_top",
+    "north": "minecraft:block/observer_front",
+    "south": "enderio:block/machine_back",
+    "east": "enderio:block/machine_side",
+    "west": "enderio:block/machine_side"
+  }
+}

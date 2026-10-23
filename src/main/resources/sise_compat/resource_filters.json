@@ -1,0 +1,112 @@
+{
+  "assets/justdirethings/patchouli_books/justdirethingsbook/en_us/entries/justdynathings/paradox_mixer.json": {
+    "sources": [
+      {
+        "file": "justdynathings-2.0-alpha-build-13.jar",
+        "path": "assets/justdirethings/patchouli_books/justdirethingsbook/en_us/entries/justdynathings/paradox_mixer.json",
+        "sha256": "d6fc1b21805e67d728418c5a2d3a724a150c63a289522247ab348dd342506a2e"
+      }
+    ],
+    "if_missing_block": "justdynathings:paradox_mixer",
+    "reason": "Retire the obsolete Patchouli entry for a block removed from this addon; preserve the rest of the manual and the current GuideMe content"
+  },
+  "assets/justdirethings/patchouli_books/justdirethingsbook/en_us/entries/justdynathings/thermogen.json": {
+    "sources": [
+      {
+        "file": "justdynathings-2.0-alpha-build-13.jar",
+        "path": "assets/justdirethings/patchouli_books/justdirethingsbook/en_us/entries/justdynathings/thermogen.json",
+        "sha256": "1f645e0779e65f490ca6b63e0367170340a8dcf1367941b00a2dc5dac21c98a5"
+      }
+    ],
+    "if_missing_block": "justdynathings:thermo_generator",
+    "reason": "Retire the obsolete Patchouli entry for a block removed from this addon; preserve the rest of the manual and the current GuideMe content"
+  },
+  "assets/justdirethings/patchouli_books/justdirethingsbook/en_us/entries/justdynathings/buddings.json": {
+    "sources": [
+      {
+        "file": "justdynathings-2.0-alpha-build-13.jar",
+        "path": "assets/justdirethings/patchouli_books/justdirethingsbook/en_us/entries/justdynathings/buddings.json",
+        "sha256": "d07dfcd3628133701c57cc2e136a7c90cbe81ab51e865185ea4e69bd8c355464"
+      }
+    ],
+    "if_missing_block": "justdynathings:echoing_budding_amethyst",
+    "reason": "Retire the obsolete Patchouli entry for a block removed from this addon; preserve the rest of the manual and the current GuideMe content"
+  },
+  "assets/justdirethings/patchouli_books/justdirethingsbook/en_us/entries/justdynathings/reforger.json": {
+    "sources": [
+      {
+        "file": "justdynathings-2.0-alpha-build-13.jar",
+        "path": "assets/justdirethings/patchouli_books/justdirethingsbook/en_us/entries/justdynathings/reforger.json",
+        "sha256": "d951aed5e57655eb3f145a1c2af9ccd35d07bb5c38ebcdb81a765836c8199b3b"
+      }
+    ],
+    "if_missing_block": "justdynathings:reforger",
+    "reason": "Retire the obsolete Patchouli entry for a block removed from this addon; preserve the rest of the manual and the current GuideMe content"
+  },
+  "assets/justdirethings/patchouli_books/justdirethingsbook/zh_cn/entries/justdynathings/paradox_mixer.json": {
+    "sources": [
+      {
+        "file": "justdynathings-2.0-alpha-build-13.jar",
+        "path": "assets/justdirethings/patchouli_books/justdirethingsbook/zh_cn/entries/justdynathings/paradox_mixer.json",
+        "sha256": "459abcb706885061d6416f5fbc9e29cf3d3a164a7cd46628d5901742d09bc06f"
+      }
+    ],
+    "if_missing_block": "justdynathings:paradox_mixer",
+    "reason": "Retire the obsolete Patchouli entry for a block removed from this addon; preserve the rest of the manual and the current GuideMe content"
+  },
+  "assets/justdirethings/patchouli_books/justdirethingsbook/zh_cn/entries/justdynathings/thermogen.json": {
+    "sources": [
+      {
+        "file": "justdynathings-2.0-alpha-build-13.jar",
+        "path": "assets/justdirethings/patchouli_books/justdirethingsbook/zh_cn/entries/justdynathings/thermogen.json",
+        "sha256": "1d550d1535cb4139c703d5e1f2a5ec2112e495f0fab357aec04a65fcc652a10b"
+      }
+    ],
+    "if_missing_block": "justdynathings:thermo_generator",
+    "reason": "Retire the obsolete Patchouli entry for a block removed from this addon; preserve the rest of the manual and the current GuideMe content"
+  },
+  "assets/justdirethings/patchouli_books/justdirethingsbook/zh_cn/entries/justdynathings/buddings.json": {
+    "sources": [
+      {
+        "file": "justdynathings-2.0-alpha-build-13.jar",
+        "path": "assets/justdirethings/patchouli_books/justdirethingsbook/zh_cn/entries/justdynathings/buddings.json",
+        "sha256": "323b538b2684e7b345cb6cfb3ede47b318236d433374662be1e1f072d04bf82e"
+      }
+    ],
+    "if_missing_block": "justdynathings:echoing_budding_amethyst",
+    "reason": "Retire the obsolete Patchouli entry for a block removed from this addon; preserve the rest of the manual and the current GuideMe content"
+  },
+  "assets/justdirethings/patchouli_books/justdirethingsbook/zh_cn/entries/justdynathings/reforger.json": {
+    "sources": [
+      {
+        "file": "justdynathings-2.0-alpha-build-13.jar",
+        "path": "assets/justdirethings/patchouli_books/justdirethingsbook/zh_cn/entries/justdynathings/reforger.json",
+        "sha256": "f8cf8215bcaf47c1776e00fededb773276fa90de1668796d617523ebd74ffc45"
+      }
+    ],
+    "if_missing_block": "justdynathings:reforger",
+    "reason": "Retire the obsolete Patchouli entry for a block removed from this addon; preserve the rest of the manual and the current GuideMe content"
+  },
+  "assets/modularrouters/patchouli_books/book/en_us/entries/filters/ftb_filter_system.json": {
+    "sources": [
+      {
+        "file": "modular-routers-26.1.2.2.jar",
+        "path": "assets/modularrouters/patchouli_books/book/en_us/entries/filters/ftb_filter_system.json",
+        "sha256": "5a0e5ad25c1243d333b34099c6f85bc31f47775c4fbe948c67023605223c1a52"
+      }
+    ],
+    "if_missing_mod": "ftbfiltersystem",
+    "reason": "Do not eagerly parse an unavailable optional integration icon; the original mod flag already hides this entry when FTB Filter System is absent"
+  },
+  "assets/modularrouters/patchouli_books/book/ja_jp/entries/filters/ftb_filter_system.json": {
+    "sources": [
+      {
+        "file": "modular-routers-26.1.2.2.jar",
+        "path": "assets/modularrouters/patchouli_books/book/ja_jp/entries/filters/ftb_filter_system.json",
+        "sha256": "e71b13aa068fa36c310e21954b267cca02cc104d0f1ef07b29353cb18039a8ac"
+      }
+    ],
+    "if_missing_mod": "ftbfiltersystem",
+    "reason": "Do not eagerly parse an unavailable optional integration icon; the original mod flag already hides this entry when FTB Filter System is absent"
+  }
+}

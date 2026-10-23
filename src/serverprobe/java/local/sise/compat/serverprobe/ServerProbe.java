@@ -34,9 +34,9 @@ public final class ServerProbe {
                 checks.add("registered original conduit ID " + id);
             }
             require(((Map<?,?>)RecipePatches.lastReport.get("skipped")).isEmpty(), "recipe guard skipped");
-            require(((Map<?,?>)RecipePatches.lastReport.get("applied")).size() == 93, "recipe count");
+            require(((Map<?,?>)RecipePatches.lastReport.get("applied")).size() == 87, "recipe count");
             require(RecipeSafety.lastReport.size() == 12, "material safety count");
-            checks.add("93 source-guarded patches and 12 material safety repairs applied on dedicated server");
+            checks.add("87 source-guarded patches and 12 material safety repairs applied on dedicated server");
             var source = new java.util.concurrent.ConcurrentHashMap<Identifier,Integer>();
             source.put(Identifier.parse("sise_compat:test"), 1);
             var payload = new org.yanbwe.raritycore.network.RaritySyncPayload(source, source, List.of());

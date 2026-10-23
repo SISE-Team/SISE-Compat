@@ -5,6 +5,7 @@ import com.mojang.serialization.JsonOps;
 import java.util.*;
 import java.util.concurrent.*;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.*;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.tags.TagKey;
@@ -19,6 +20,12 @@ final class RuntimeFixChecks {
         for (String id : List.of("registry_concurrency_fix", "enderio_chemical_compat"))
             require(!ModList.get().isLoaded(id), "retired mod still loaded: " + id);
         checks.add("only SISE Compat supplies migrated runtime fixes");
+        require(!ModList.get().isLoaded("constructionwand"), "retired Construction Wands mod still loaded");
+        require(ModList.get().isLoaded("constructionstick"), "Construction Sticks missing");
+        require(BuiltInRegistries.ITEM.keySet().stream().noneMatch(id -> id.getNamespace().equals("constructionwand")), "retired wand item registered");
+        require(server.getRecipeManager().getRecipes().stream().noneMatch(holder -> holder.id().identifier().getNamespace().equals("constructionwand")), "retired wand recipe loaded");
+        require(server.getRecipeManager().getRecipes().stream().filter(holder -> holder.id().identifier().getNamespace().equals("constructionstick")).count() == 37, "Construction Sticks recipes changed");
+        checks.add("Construction Wands absent; Construction Sticks and all 37 recipes retained across reload");
         TitaniumChecks.verify(server);
         checks.add("original Titanium inventory finder: every slot and invalid index; normal pickup and four backpack locations conserve items");
         for (char value = 0; value < 65535; value++) {

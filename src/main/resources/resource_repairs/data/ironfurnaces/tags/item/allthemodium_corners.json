@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    {
+      "id": "#c:storage_blocks/allthemodium",
+      "required": false
+    },
+    {
+      "id": "allthemodium:allthemodium_block",
+      "required": false
+    },
+    {
+      "id": "alltheores:allthemodium_block",
+      "required": false
+    }
+  ]
+}

@@ -1640,877 +1640,6 @@
       },
       "reason": "compatibility format migration; original costs, layout and component requirements preserved"
     },
-    "iceandfire:armor_copper_metal_boots": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "# #",
-          "# #"
-        ],
-        "result": {
-          "id": "iceandfire:armor_copper_metal_boots"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "##",
-          "  ",
-          "##"
-        ],
-        "result": {
-          "id": "iceandfire:armor_copper_metal_boots"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "iceandfire:armor_copper_metal_chestplate": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "# #",
-          "###",
-          "###"
-        ],
-        "result": {
-          "id": "iceandfire:armor_copper_metal_chestplate"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "###",
-          "## ",
-          "###"
-        ],
-        "result": {
-          "id": "iceandfire:armor_copper_metal_chestplate"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "iceandfire:armor_copper_metal_helmet": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "###",
-          "# #"
-        ],
-        "result": {
-          "id": "iceandfire:armor_copper_metal_helmet"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "##",
-          " #",
-          "##"
-        ],
-        "result": {
-          "id": "iceandfire:armor_copper_metal_helmet"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "iceandfire:armor_copper_metal_leggings": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "###",
-          "# #",
-          "# #"
-        ],
-        "result": {
-          "id": "iceandfire:armor_copper_metal_leggings"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "###",
-          "  #",
-          "###"
-        ],
-        "result": {
-          "id": "iceandfire:armor_copper_metal_leggings"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "iceandfire:copper_axe": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "MM",
-          "MH",
-          " H"
-        ],
-        "result": {
-          "id": "iceandfire:copper_axe"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          " MM",
-          "HHM"
-        ],
-        "result": {
-          "id": "iceandfire:copper_axe"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "iceandfire:copper_hoe": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "MM",
-          " H",
-          " H"
-        ],
-        "result": {
-          "id": "iceandfire:copper_hoe"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "  M",
-          "HHM"
-        ],
-        "result": {
-          "id": "iceandfire:copper_hoe"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "iceandfire:copper_pickaxe": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "MMM",
-          " H ",
-          " H "
-        ],
-        "result": {
-          "id": "iceandfire:copper_pickaxe"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "  M",
-          "HHM",
-          "  M"
-        ],
-        "result": {
-          "id": "iceandfire:copper_pickaxe"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "iceandfire:copper_shovel": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "M",
-          "H",
-          "H"
-        ],
-        "result": {
-          "id": "iceandfire:copper_shovel"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "HHM"
-        ],
-        "result": {
-          "id": "iceandfire:copper_shovel"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "iceandfire:copper_sword": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "M",
-          "M",
-          "H"
-        ],
-        "result": {
-          "id": "iceandfire:copper_sword"
-        },
-        "show_notification": true
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "H": "minecraft:stick",
-          "M": "minecraft:copper_ingot"
-        },
-        "pattern": [
-          "HMM"
-        ],
-        "result": {
-          "id": "iceandfire:copper_sword"
-        },
-        "show_notification": true
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "prefab:swift_blade_diamond": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          "  a",
-          " a ",
-          "b  "
-        ],
-        "key": {
-          "a": "minecraft:diamond",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_diamond",
-          "count": 1
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          " aa",
-          "b  "
-        ],
-        "key": {
-          "a": "minecraft:diamond",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_diamond",
-          "count": 1
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "prefab:swift_blade_gold": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          "  a",
-          " a ",
-          "b  "
-        ],
-        "key": {
-          "a": "minecraft:gold_ingot",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_gold",
-          "count": 1
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          " aa",
-          "b  "
-        ],
-        "key": {
-          "a": "minecraft:gold_ingot",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_gold",
-          "count": 1
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "prefab:swift_blade_iron": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          "  a",
-          " a ",
-          "b  "
-        ],
-        "key": {
-          "a": "minecraft:iron_ingot",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_iron",
-          "count": 1
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          " aa",
-          "b  "
-        ],
-        "key": {
-          "a": "minecraft:iron_ingot",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_iron",
-          "count": 1
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "prefab:swift_blade_stone": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          "  a",
-          " a ",
-          "b  "
-        ],
-        "key": {
-          "a": "minecraft:cobblestone",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_stone",
-          "count": 1
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          " aa",
-          "b  "
-        ],
-        "key": {
-          "a": "minecraft:cobblestone",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_stone",
-          "count": 1
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "prefab:swift_blade_wood": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          "  a",
-          " a ",
-          "b  "
-        ],
-        "key": {
-          "a": "#minecraft:planks",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_wood",
-          "count": 1
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "configName": "Swift Blade",
-        "fabric:load_conditions": [
-          {
-            "condition": "prefab:recipe_enabled",
-            "configName": "Swift Blade"
-          }
-        ],
-        "neoforge:conditions": [
-          {
-            "type": "prefab:recipe_enabled",
-            "value": "Swift Blade"
-          }
-        ],
-        "group": "Swift Blade",
-        "pattern": [
-          " aa",
-          "b  "
-        ],
-        "key": {
-          "a": "#minecraft:planks",
-          "b": "minecraft:stick"
-        },
-        "result": {
-          "id": "prefab:item_swift_blade_wood",
-          "count": 1
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "cakesticklib:chisel": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "I": "#c:ingots/iron",
-          "S": "minecraft:stick"
-        },
-        "pattern": [
-          "  I",
-          " I ",
-          "S  "
-        ],
-        "result": {
-          "id": "cakesticklib:chisel"
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "I": "#c:ingots/iron",
-          "S": "minecraft:stick"
-        },
-        "pattern": [
-          "I ",
-          "SI"
-        ],
-        "result": {
-          "id": "cakesticklib:chisel"
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "constructionwand:stone_wand": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#minecraft:stone_tool_materials"
-        },
-        "pattern": [
-          "  X",
-          " # ",
-          "#  "
-        ],
-        "result": {
-          "id": "constructionwand:stone_wand"
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#minecraft:stone_tool_materials"
-        },
-        "pattern": [
-          " X",
-          "# ",
-          "# "
-        ],
-        "result": {
-          "id": "constructionwand:stone_wand"
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "constructionwand:stone_wand_alt1": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#minecraft:stone_tool_materials"
-        },
-        "pattern": [
-          "X  ",
-          " # ",
-          "  #"
-        ],
-        "result": {
-          "id": "constructionwand:stone_wand"
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#minecraft:stone_tool_materials"
-        },
-        "pattern": [
-          " X",
-          "# ",
-          "# "
-        ],
-        "result": {
-          "id": "constructionwand:stone_wand"
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "constructionwand:iron_wand": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#c:ingots/iron"
-        },
-        "pattern": [
-          "  X",
-          " # ",
-          "#  "
-        ],
-        "result": {
-          "id": "constructionwand:iron_wand"
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#c:ingots/iron"
-        },
-        "pattern": [
-          " X",
-          "# ",
-          "# "
-        ],
-        "result": {
-          "id": "constructionwand:iron_wand"
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "constructionwand:iron_wand_alt1": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#c:ingots/iron"
-        },
-        "pattern": [
-          "X  ",
-          " # ",
-          "  #"
-        ],
-        "result": {
-          "id": "constructionwand:iron_wand"
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#c:ingots/iron"
-        },
-        "pattern": [
-          " X",
-          "# ",
-          "# "
-        ],
-        "result": {
-          "id": "constructionwand:iron_wand"
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "constructionwand:diamond_wand": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#c:gems/diamond"
-        },
-        "pattern": [
-          "  X",
-          " # ",
-          "#  "
-        ],
-        "result": {
-          "id": "constructionwand:diamond_wand"
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#c:gems/diamond"
-        },
-        "pattern": [
-          " X",
-          "# ",
-          "# "
-        ],
-        "result": {
-          "id": "constructionwand:diamond_wand"
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
-    "constructionwand:diamond_wand_alt1": {
-      "before": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#c:gems/diamond"
-        },
-        "pattern": [
-          "X  ",
-          " # ",
-          "  #"
-        ],
-        "result": {
-          "id": "constructionwand:diamond_wand"
-        }
-      },
-      "after": {
-        "type": "minecraft:crafting_shaped",
-        "category": "equipment",
-        "key": {
-          "#": "#c:rods/wooden",
-          "X": "#c:gems/diamond"
-        },
-        "pattern": [
-          " X",
-          "# ",
-          "# "
-        ],
-        "result": {
-          "id": "constructionwand:diamond_wand"
-        }
-      },
-      "reason": "distinct crafting layout; identical ingredient multiset and output"
-    },
     "tofucraft:tofu_fence_dried": {
       "before": {
         "type": "minecraft:crafting_shaped",
@@ -4403,6 +3532,515 @@
       },
       "reason": "migrate reviewed mineral ingredient format; preserve quantities, outputs, costs and chances",
       "category": "legacy_material_format"
+    },
+    "ic2:shapeless/uranium_238": {
+      "before": {
+        "type": "ic2:shapeless",
+        "ingredients": [
+          {
+            "item": "ic2:uranium_block"
+          }
+        ],
+        "result": {
+          "item": "ic2:uranium_238",
+          "count": 9
+        }
+      },
+      "after": {
+        "type": "ic2:shapeless",
+        "ingredients": [
+          {
+            "item": "ic2:uranium_block"
+          },
+          {
+            "item": "ic2:forge_hammer"
+          }
+        ],
+        "result": {
+          "item": "ic2:uranium_238",
+          "count": 9
+        },
+        "consuming": false
+      },
+      "reason": "Workbench unpacking with a reusable forge hammer selects the IC2 isotope route, preserves the original 1:9 yield and consumes one tool durability.",
+      "category": "nuclear_unwrap"
+    },
+    "cakesticklib:gold_gear": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "#": "#c:ingots/gold"
+        },
+        "pattern": [
+          " # ",
+          "# #",
+          " # "
+        ],
+        "result": {
+          "id": "cakesticklib:gold_gear"
+        }
+      },
+      "after": {
+        "type": "ic2:shaped",
+        "key": {
+          "#": "#c:ingots/gold",
+          "H": {
+            "item": "ic2:forge_hammer"
+          }
+        },
+        "pattern": [
+          "H# ",
+          "# #",
+          " # "
+        ],
+        "result": {
+          "item": "cakesticklib:gold_gear"
+        },
+        "consuming": false
+      },
+      "reason": "Use a reusable IC2 forge hammer to distinguish this workbench recipe; all original materials and output quantities retained, one tool durability used.",
+      "category": "crafting_conflict"
+    },
+    "cakesticklib:iron_gear": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "#": "#c:ingots/iron"
+        },
+        "pattern": [
+          " # ",
+          "# #",
+          " # "
+        ],
+        "result": {
+          "id": "cakesticklib:iron_gear"
+        }
+      },
+      "after": {
+        "type": "ic2:shaped",
+        "key": {
+          "#": "#c:ingots/iron",
+          "H": {
+            "item": "ic2:forge_hammer"
+          }
+        },
+        "pattern": [
+          "H# ",
+          "# #",
+          " # "
+        ],
+        "result": {
+          "item": "cakesticklib:iron_gear"
+        },
+        "consuming": false
+      },
+      "reason": "Use a reusable IC2 forge hammer to distinguish this workbench recipe; all original materials and output quantities retained, one tool durability used.",
+      "category": "crafting_conflict"
+    },
+    "extendedcrafting:redstone_ingot": {
+      "before": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          "#c:ingots/iron",
+          "#c:dusts/redstone"
+        ],
+        "result": {
+          "id": "extendedcrafting:redstone_ingot"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "result": {
+          "id": "extendedcrafting:redstone_ingot"
+        },
+        "key": {
+          "I": "#c:ingots/iron",
+          "R": "#c:dusts/redstone"
+        },
+        "pattern": [
+          "I",
+          "R"
+        ]
+      },
+      "reason": "Separate the redstone ingot vertical layout from the medium covalence dust horizontal layout; original material counts and outputs retained.",
+      "category": "crafting_conflict"
+    },
+    "ic2:shaped/carbon_fibre": {
+      "before": {
+        "type": "ic2:shaped",
+        "pattern": [
+          "CC",
+          "CC"
+        ],
+        "key": {
+          "C": {
+            "tag": "forge:dusts/coal"
+          }
+        },
+        "result": {
+          "item": "ic2:carbon_fibre"
+        }
+      },
+      "after": {
+        "type": "ic2:shaped",
+        "pattern": [
+          "CCH",
+          "CC "
+        ],
+        "key": {
+          "C": {
+            "tag": "forge:dusts/coal"
+          },
+          "H": {
+            "item": "ic2:forge_hammer"
+          }
+        },
+        "result": {
+          "item": "ic2:carbon_fibre"
+        },
+        "consuming": false
+      },
+      "reason": "Use a reusable IC2 forge hammer to distinguish this workbench recipe; all original materials and output quantities retained, one tool durability used.",
+      "category": "crafting_conflict"
+    },
+    "ic2:shapeless/bronze_dust": {
+      "before": {
+        "type": "ic2:shapeless",
+        "ingredients": [
+          [
+            {
+              "tag": "forge:dusts/tin"
+            },
+            {
+              "item": "ic2:crushed_tin"
+            },
+            {
+              "item": "ic2:purified_tin"
+            }
+          ],
+          [
+            {
+              "tag": "forge:dusts/copper"
+            },
+            {
+              "item": "ic2:crushed_copper"
+            },
+            {
+              "item": "ic2:purified_copper"
+            }
+          ],
+          [
+            {
+              "tag": "forge:dusts/copper"
+            },
+            {
+              "item": "ic2:crushed_copper"
+            },
+            {
+              "item": "ic2:purified_copper"
+            }
+          ],
+          [
+            {
+              "tag": "forge:dusts/copper"
+            },
+            {
+              "item": "ic2:crushed_copper"
+            },
+            {
+              "item": "ic2:purified_copper"
+            }
+          ]
+        ],
+        "result": {
+          "item": "ic2:bronze_dust",
+          "count": 4
+        }
+      },
+      "after": {
+        "type": "ic2:shapeless",
+        "ingredients": [
+          [
+            {
+              "tag": "forge:dusts/tin"
+            },
+            {
+              "item": "ic2:crushed_tin"
+            },
+            {
+              "item": "ic2:purified_tin"
+            }
+          ],
+          [
+            {
+              "tag": "forge:dusts/copper"
+            },
+            {
+              "item": "ic2:crushed_copper"
+            },
+            {
+              "item": "ic2:purified_copper"
+            }
+          ],
+          [
+            {
+              "tag": "forge:dusts/copper"
+            },
+            {
+              "item": "ic2:crushed_copper"
+            },
+            {
+              "item": "ic2:purified_copper"
+            }
+          ],
+          [
+            {
+              "tag": "forge:dusts/copper"
+            },
+            {
+              "item": "ic2:crushed_copper"
+            },
+            {
+              "item": "ic2:purified_copper"
+            }
+          ],
+          {
+            "item": "ic2:forge_hammer"
+          }
+        ],
+        "result": {
+          "item": "ic2:bronze_dust",
+          "count": 4
+        },
+        "consuming": false
+      },
+      "reason": "Use a reusable IC2 forge hammer to distinguish this workbench recipe; all original materials and output quantities retained, one tool durability used.",
+      "category": "crafting_conflict"
+    },
+    "projecte:medium_covalence_dust": {
+      "before": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          "#c:ingots/iron",
+          "#c:dusts/redstone"
+        ],
+        "result": {
+          "count": 40,
+          "id": "projecte:medium_covalence_dust"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "result": {
+          "count": 40,
+          "id": "projecte:medium_covalence_dust"
+        },
+        "key": {
+          "I": "#c:ingots/iron",
+          "R": "#c:dusts/redstone"
+        },
+        "pattern": [
+          "IR"
+        ]
+      },
+      "reason": "Separate the redstone ingot vertical layout from the medium covalence dust horizontal layout; original material counts and outputs retained.",
+      "category": "crafting_conflict"
+    },
+    "cakesticklib:steel_plate": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "I": "#c:ingots/steel"
+        },
+        "pattern": [
+          "III"
+        ],
+        "result": {
+          "count": 3,
+          "id": "cakesticklib:steel_plate"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "I": "#sise_ores:equivalents/ingots/steel"
+        },
+        "pattern": [
+          "III"
+        ],
+        "result": {
+          "count": 3,
+          "id": "cakesticklib:steel_plate"
+        }
+      },
+      "category": "material_stage",
+      "reason": "Ordinary steel parts use reviewed steel ingots/blocks and exclude the distinct biosteel alloy; original quantity, processing mode and output retained."
+    },
+    "cakesticklib:steel_gear": {
+      "before": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "#": "#c:ingots/steel"
+        },
+        "pattern": [
+          " # ",
+          "# #",
+          " # "
+        ],
+        "result": {
+          "id": "cakesticklib:steel_gear"
+        }
+      },
+      "after": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "#": "#sise_ores:equivalents/ingots/steel"
+        },
+        "pattern": [
+          " # ",
+          "# #",
+          " # "
+        ],
+        "result": {
+          "id": "cakesticklib:steel_gear"
+        }
+      },
+      "category": "material_stage",
+      "reason": "Ordinary steel parts use reviewed steel ingots/blocks and exclude the distinct biosteel alloy; original quantity, processing mode and output retained."
+    },
+    "modern_industrialization:materials/steel/compressor/main": {
+      "before": {
+        "type": "modern_industrialization:compressor",
+        "duration": 200,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#c:ingots/steel"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:steel_plate"
+          }
+        ]
+      },
+      "after": {
+        "type": "modern_industrialization:compressor",
+        "duration": 200,
+        "eu": 2,
+        "item_inputs": [
+          {
+            "amount": 1,
+            "ingredient": "#sise_ores:equivalents/ingots/steel"
+          }
+        ],
+        "item_outputs": [
+          {
+            "amount": 1,
+            "id": "modern_industrialization:steel_plate"
+          }
+        ]
+      },
+      "category": "material_stage",
+      "reason": "Ordinary steel parts use reviewed steel ingots/blocks and exclude the distinct biosteel alloy; original quantity, processing mode and output retained."
+    },
+    "modern_industrialization:materials/steel/forge_hammer/ingot_to_plate": {
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#c:ingots/steel",
+        "result": {
+          "id": "modern_industrialization:steel_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "count": 2,
+        "ingredient": "#sise_ores:equivalents/ingots/steel",
+        "result": {
+          "id": "modern_industrialization:steel_plate"
+        }
+      },
+      "category": "material_stage",
+      "reason": "Ordinary steel parts use reviewed steel ingots/blocks and exclude the distinct biosteel alloy; original quantity, processing mode and output retained."
+    },
+    "modern_industrialization:materials/steel/forge_hammer/ingot_to_plate_with_tool": {
+      "before": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 20,
+        "ingredient": "#c:ingots/steel",
+        "result": {
+          "id": "modern_industrialization:steel_plate"
+        }
+      },
+      "after": {
+        "type": "modern_industrialization:forge_hammer",
+        "damage": 20,
+        "ingredient": "#sise_ores:equivalents/ingots/steel",
+        "result": {
+          "id": "modern_industrialization:steel_plate"
+        }
+      },
+      "category": "material_stage",
+      "reason": "Ordinary steel parts use reviewed steel ingots/blocks and exclude the distinct biosteel alloy; original quantity, processing mode and output retained."
+    },
+    "ic2:metal_former_rolling/ingots_steel_to_steel_plate": {
+      "before": {
+        "type": "ic2:metal_former_rolling",
+        "ingredient": {
+          "tag": "forge:ingots/steel"
+        },
+        "result": {
+          "item": "ic2:steel_plate"
+        }
+      },
+      "after": {
+        "type": "ic2:metal_former_rolling",
+        "ingredient": {
+          "tag": "sise_ores:equivalents/ingots/steel"
+        },
+        "result": {
+          "item": "ic2:steel_plate"
+        }
+      },
+      "category": "material_stage",
+      "reason": "Ordinary steel parts use reviewed steel ingots/blocks and exclude the distinct biosteel alloy; original quantity, processing mode and output retained."
+    },
+    "ic2:block_cutter/blocks_steel_to_steel_plate": {
+      "before": {
+        "type": "ic2:block_cutter",
+        "ingredient": {
+          "tag": "forge:blocks/steel"
+        },
+        "result": {
+          "item": "ic2:steel_plate",
+          "count": 9
+        },
+        "hardness": 8
+      },
+      "after": {
+        "type": "ic2:block_cutter",
+        "ingredient": {
+          "tag": "sise_ores:equivalents/storage_blocks/steel"
+        },
+        "result": {
+          "item": "ic2:steel_plate",
+          "count": 9
+        },
+        "hardness": 8
+      },
+      "category": "material_stage",
+      "reason": "Ordinary steel parts use reviewed steel ingots/blocks and exclude the distinct biosteel alloy; original quantity, processing mode and output retained."
     }
   },
   "additions": {

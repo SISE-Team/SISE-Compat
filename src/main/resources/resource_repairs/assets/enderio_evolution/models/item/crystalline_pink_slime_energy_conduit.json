@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "enderio_evolution:block/conduit/crystalline_pink_slime_energy_conduit"
+  }
+}

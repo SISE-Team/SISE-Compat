@@ -1,0 +1,21 @@
+{
+  "name": "无限背包",
+  "icon": "industrialforegoing:infinity_backpack",
+  "category": "industrialforegoing:tools",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "便于随身携带大量物品的背包。$(br2)可存储三种特定流体：供自动功能消耗的$(6)生物燃油$()、自动拾取经验转化而来的$(6)精华液$()，以及用于自动喂食的$(6)肉汤$()。"
+    },
+    {
+      "type": "text",
+      "text": "启用$(6)磁铁模式$()后，附近可拾取的物品会被传送到玩家身边。$(br2)启用$(6)自动拾取模式$()后，拾取的物品会在可存入时直接进入背包。$(br2)各物品槽可分别设置为$(6)销毁$()多余物品，或$(6)补充$()玩家物品栏中未满的物品堆。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "industrialforegoing:infinity_backpack"
+    }
+  ]
+}
